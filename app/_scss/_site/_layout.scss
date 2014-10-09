@@ -1,0 +1,45 @@
+/**
+ * レイアウト
+ */
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 100%;
+  @extend .clearfix;
+}
+
+.l-two-column{
+	padding-bottom: 120px;
+}
+
+.l-main{
+  max-width: 72.6%;
+  width: 100%;
+  float: left;
+  padding-top: 24px;
+
+  @media screen and (max-width: 640px) {
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+}
+
+.l-sidebar{
+  max-width: 25%;
+  width: 100%;
+  float: right;
+  padding-top: 24px;
+
+  @media screen and (max-width: 640px) {
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+}

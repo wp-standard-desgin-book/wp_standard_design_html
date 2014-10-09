@@ -1,0 +1,37 @@
+.footer{
+  background: #F6F6F6;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.footer-logo{
+  margin-bottom: 2em;
+  p{
+    font-size: 10px;
+    color: #A5A5A5;
+  }
+}
+
+.footer-navigation{
+  margin-bottom: 2em;
+  li{
+    display: inline-block;
+  }
+  a{
+    color: #454545;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url(/images/arrow-small.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-copyright{
+  color: #AAAAAA;
+}

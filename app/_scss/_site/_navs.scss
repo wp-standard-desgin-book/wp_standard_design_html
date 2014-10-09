@@ -1,0 +1,20 @@
+.menu-navs{
+  margin-bottom: 24px;
+  ul{
+    overflow: hidden;
+    li{
+      display: block;
+      float: left;
+      margin-right: 16px;
+      a{
+        display: inline-block;
+        color: #454545;
+        text-decoration: none;
+        border: 1px solid #e8e8e8;
+        line-height: 3em;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
+}
