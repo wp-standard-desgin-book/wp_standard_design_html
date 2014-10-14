@@ -1,0 +1,30 @@
+#comments{
+	padding: 16px;
+	border: 1px solid #e8e8e8;
+
+	#reply-title{
+		margin-top: 0;
+		background: none;
+	}
+
+	input[type=text],
+	input[type=url],
+	input[type=email],
+	textarea{
+		width: 430px;
+	}
+
+	label{
+		min-width: 230px;
+		display: inline-block;
+	}
+
+	.form-allowed-tags{
+		font-size: 12px;
+	}
+
+	.form-submit{
+		text-align: center;
+	}
+
+}

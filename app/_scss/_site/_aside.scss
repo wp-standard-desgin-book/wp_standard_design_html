@@ -1,6 +1,16 @@
+/*------------------------------------*\
+    サイドバー
+\*------------------------------------*/
+
+
+
+
 /**
- * ウィジェットタイトル
- */
+  * @name Widget-Title
+  * @description ウィジェットタイトル のスタイル
+  * @markup
+  *   <h2 class="widget-title">ウィジェットタイトル</h2>
+  */
 .widget-title {
     font-size: 18px;
     font-weight: normal;
@@ -15,15 +25,28 @@
 }
 
 /**
- * ウィジェット
- */
+  * @name Widget
+  * @description ウィジェットのマージンの定義
+  * @markup
+  *   <div class="widget">markup</div>
+  */
 .widget {
     margin-bottom: 24px;
 }
 
 /**
- * ウィジェットカテゴリー
- */
+  * @name Widget_Category
+  * @description サイドバーのカテゴリリスト一覧のスタイル
+  * @markup
+  *   <div class="widget_category">
+  *     <ul>
+  *       <li>カテゴリ</li>
+  *       <li>カテゴリ</li>
+  *       <li>カテゴリ</li>
+  *     </ul>
+  *   </div>
+  */
+
 .widget_category {
     ul {
         border: 1px solid #e8e8e8;

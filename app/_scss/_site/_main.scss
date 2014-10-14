@@ -1,8 +1,20 @@
+/**
+  * @name Row
+  * @description Style for the row class
+  * @markup
+  *   <div class="row">markup</div>
+  */
 .row{
   margin-left: -12px;
   margin-right: -12px;
 }
 
+/**
+  * @name Product-Info
+  * @description Style for the product-info class
+  * @markup
+  *   <div class="product-info">markup</div>
+  */
 .product-info{
   text-align: center;
   width: 46.8%;
@@ -22,6 +34,12 @@
 
 }
 
+/**
+  * @name Product-Title
+  * @description Style for the product-title class
+  * @markup
+  *   <div class="product-title">markup</div>
+  */
 .product-title{
   font-size: 18px;
 }

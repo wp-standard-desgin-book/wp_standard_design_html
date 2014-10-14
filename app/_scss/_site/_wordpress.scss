@@ -1,7 +1,18 @@
-/*
- * WordPress Core
- * http://codex.wordpress.org/CSS
- */
+// WordPress
+//
+// WordPress 用の スタイル定義
+//
+// Markup:
+// <div class="menu-navs">
+//   <ul>
+//     <li>リスト</li>
+//     <li>リスト</li>
+//     <li>リスト</li>
+//     <li>リスト</li>
+//   </ul>
+// </div>
+//
+// Styleguide 1.1.
 .alignnone {
     margin: 5px 20px 20px 0;
 }
@@ -82,4 +93,8 @@ a img.aligncenter {
     font-style: normal;
     margin: 0;
     padding: 0 4px 5px;
+}
+
+.screen-reader-text{
+	display: none;
 }
