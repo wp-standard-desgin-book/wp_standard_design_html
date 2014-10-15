@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>WordPress 標準デザイン講座 スタイルガイド</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">WordPress 標準デザイン講座 スタイルガイド</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="6">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">デフォルトスタイル</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">レイアウト</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">ヘッダー</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">サイドバー</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">フッター</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">コンテンツ</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">トップページ</span></a></li>
+              
+            </ul>
+            
+            <ul class="kss-menu-child">
+              
+              
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.1"><span class="kss-ref">6.1</span><span class="kss-name">見出し</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.2"><span class="kss-ref">6.2</span><span class="kss-name">テキストのスタイル</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.3"><span class="kss-ref">6.3</span><span class="kss-name">テーブル</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.4"><span class="kss-ref">6.4</span><span class="kss-name">お問い合わせフォーム</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.5"><span class="kss-ref">6.5</span><span class="kss-name">投稿メタデータ</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.6"><span class="kss-ref">6.6</span><span class="kss-name">投稿ナビゲーション</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.7"><span class="kss-ref">6.7</span><span class="kss-name">投稿コメントフォーム</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.8"><span class="kss-ref">6.8</span><span class="kss-name">WordPress 独自スタイル</span></a></li>
+              
+              
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          
+          
+          <section id="section-6" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">6</span> コンテンツ</h1>
+            
+            
+            <div class="kss-description">
+              <p>投稿記事内のコンテンツのガイドです</p>
+
+            </div>
+            
+            
+          </section>
+          
+          <section id="section-6.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.1</span> 見出し</h1>
+            
+            
+            <div class="kss-description">
+              <p>投稿記事内の見出しスタイル定義です。<br>
+
+</p>
+<p>.entry-content 要素の子要素の場合に
+各見出しタグにスタイルが適用されます。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="entry-content">
+  <h1>見出し - h1</h1>
+  <h2>見出し - h2</h2>
+  <h3>見出し - h3</h3>
+  <h4>見出し - h4</h4>
+  <h5>見出し - h5</h5>
+  <h6>見出し - h6</h6>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;entry-content&quot;&gt;
+  &lt;h1&gt;見出し - h1&lt;/h1&gt;
+  &lt;h2&gt;見出し - h2&lt;/h2&gt;
+  &lt;h3&gt;見出し - h3&lt;/h3&gt;
+  &lt;h4&gt;見出し - h4&lt;/h4&gt;
+  &lt;h5&gt;見出し - h5&lt;/h5&gt;
+  &lt;h6&gt;見出し - h6&lt;/h6&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.2</span> テキストのスタイル</h1>
+            
+            
+            <div class="kss-description">
+              <p>投稿記事内のテキストのスタイル定義です。<br>
+基本的に、class をつけずにHTMLタグを利用し、
+.entry-content 内のスタイル定義をしています。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="entry-content">
+  <h2>段落 </h2>
+  <p>文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章</p>
+  <h2>small タグ</h2>
+  <p><small>少し小さなテキストです。</small></p>
+  <h2>strong タグ</h2>
+  <p><strong>強調テキストです。</strong></p>
+  <h2>定義リスト</h2>
+  <dl>
+    <dt>定義リスト</dt>
+    <dd>定義リストコンテンツ</dd>
+  </dl>
+  <h2>pre タグ</h2>
+  <pre>
+    .entry-content{
+      pre{
+        background: $gray;
+        padding: 16px;
+      }
+    }
+  </pre>
+  <h2>code タグ</h2>
+  <code>
+    &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt;
+  </code>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;entry-content&quot;&gt;
+  &lt;h2&gt;段落 &lt;/h2&gt;
+  &lt;p&gt;文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章&lt;/p&gt;
+  &lt;h2&gt;small タグ&lt;/h2&gt;
+  &lt;p&gt;&lt;small&gt;少し小さなテキストです。&lt;/small&gt;&lt;/p&gt;
+  &lt;h2&gt;strong タグ&lt;/h2&gt;
+  &lt;p&gt;&lt;strong&gt;強調テキストです。&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;定義リスト&lt;/h2&gt;
+  &lt;dl&gt;
+    &lt;dt&gt;定義リスト&lt;/dt&gt;
+    &lt;dd&gt;定義リストコンテンツ&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;h2&gt;pre タグ&lt;/h2&gt;
+  &lt;pre&gt;
+    .entry-content{
+      pre{
+        background: $gray;
+        padding: 16px;
+      }
+    }
+  &lt;/pre&gt;
+  &lt;h2&gt;code タグ&lt;/h2&gt;
+  &lt;code&gt;
+    &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt;
+  &lt;/code&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.3</span> テーブル</h1>
+            
+            
+            <div class="kss-description">
+              <p>投稿記事内のテーブルのスタイルです。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="entry-content">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          table > thead > tr > th
+        </th>
+        <th>
+          table > thead > tr > th
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          table > tbody > tr > td
+        </td>
+        <td>
+          table > tbody > tr > td
+        </td>
+      </tr>
+      <tr>
+        <td>
+          table > tbody > tr > td
+        </td>
+        <td>
+          table > tbody > tr > td
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;entry-content&quot;&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;
+          table &gt; thead &gt; tr &gt; th
+        &lt;/th&gt;
+        &lt;th&gt;
+          table &gt; thead &gt; tr &gt; th
+        &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          table &gt; tbody &gt; tr &gt; td
+        &lt;/td&gt;
+        &lt;td&gt;
+          table &gt; tbody &gt; tr &gt; td
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          table &gt; tbody &gt; tr &gt; td
+        &lt;/td&gt;
+        &lt;td&gt;
+          table &gt; tbody &gt; tr &gt; td
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.4</span> お問い合わせフォーム</h1>
+            
+            
+            <div class="kss-description">
+              <p>お問い合わせフォーム用のスタイル定義です。
+table タグに <code>.contact-form</code> クラスを付与してください。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <table class="contact-form">
+	<tbody>
+		<tr>
+			<th>
+				お名前 <span class="text-danger">*</span>
+			</th>
+			<td>
+				<input type="text" name="name" value="">
+			</td>
+		</tr>
+		<tr>
+			<th>
+				メールアドレス <span class="text-danger">*</span>
+			</th>
+			<td>
+				<input type="text" name="e-mail" value="">
+			</td>
+		</tr>
+		<tr>
+			<th>
+				タイトル
+			</th>
+			<td>
+				<input type="text" name="title" value="">
+			</td>
+		</tr>
+		<tr>
+			<th>
+				お問い合わせ内容 <span class="text-danger">*</span>
+			</th>
+			<td>
+				<textarea name="content" >
+				</textarea>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;table class=&quot;contact-form&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th&gt;
+				お名前 &lt;span class=&quot;text-danger&quot;&gt;*&lt;/span&gt;
+			&lt;/th&gt;
+			&lt;td&gt;
+				&lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;
+				メールアドレス &lt;span class=&quot;text-danger&quot;&gt;*&lt;/span&gt;
+			&lt;/th&gt;
+			&lt;td&gt;
+				&lt;input type=&quot;text&quot; name=&quot;e-mail&quot; value=&quot;&quot;&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;
+				タイトル
+			&lt;/th&gt;
+			&lt;td&gt;
+				&lt;input type=&quot;text&quot; name=&quot;title&quot; value=&quot;&quot;&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;
+				お問い合わせ内容 &lt;span class=&quot;text-danger&quot;&gt;*&lt;/span&gt;
+			&lt;/th&gt;
+			&lt;td&gt;
+				&lt;textarea name=&quot;content&quot; &gt;
+				&lt;/textarea&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.5" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.5</span> 投稿メタデータ</h1>
+            
+            
+            <div class="kss-description">
+              <p>投稿の著者情報、投稿日、カテゴリリンクのためのメタデータです。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="entry-meta">
+	<span class="author">
+		投稿者 : wp-standard-design-book
+	</span>
+	<span class="date">
+		<time class="entry-date" datetime="2014-09-22T04:29:32+00:00">2014年9月22日</time>
+	</span>
+	<span class="categories-links info">
+		<a href="http://test.wordpress.com/?cat=1" rel="category">新着情報</a>
+	</span>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;entry-meta&quot;&gt;
+	&lt;span class=&quot;author&quot;&gt;
+		投稿者 : wp-standard-design-book
+	&lt;/span&gt;
+	&lt;span class=&quot;date&quot;&gt;
+		&lt;time class=&quot;entry-date&quot; datetime=&quot;2014-09-22T04:29:32+00:00&quot;&gt;2014年9月22日&lt;/time&gt;
+	&lt;/span&gt;
+	&lt;span class=&quot;categories-links info&quot;&gt;
+		&lt;a href=&quot;http://test.wordpress.com/?cat=1&quot; rel=&quot;category&quot;&gt;新着情報&lt;/a&gt;
+	&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.6" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.6</span> 投稿ナビゲーション</h1>
+            
+            
+            <div class="kss-description">
+              <p>「次の記事へ」「前の記事へ」のリンクのためのナビゲーションです。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <nav class="navigation post-navigation" role="navigation">
+	<h1 class="screen-reader-text">投稿ナビゲーション</h1>
+	<div class="nav-links">
+		<a href="/" rel="prev"><span class="meta-nav">←</span> 前の記事へ</a>
+		<a href="/" rel="next">次の記事へ<span class="meta-nav">→</span></a>
+	</div>
+</nav>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;nav class=&quot;navigation post-navigation&quot; role=&quot;navigation&quot;&gt;
+	&lt;h1 class=&quot;screen-reader-text&quot;&gt;投稿ナビゲーション&lt;/h1&gt;
+	&lt;div class=&quot;nav-links&quot;&gt;
+		&lt;a href=&quot;/&quot; rel=&quot;prev&quot;&gt;&lt;span class=&quot;meta-nav&quot;&gt;←&lt;/span&gt; 前の記事へ&lt;/a&gt;
+		&lt;a href=&quot;/&quot; rel=&quot;next&quot;&gt;次の記事へ&lt;span class=&quot;meta-nav&quot;&gt;→&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.7" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.7</span> 投稿コメントフォーム</h1>
+            
+            
+            <div class="kss-description">
+              <p>投稿のコメントフォームのためのスタイルシートです。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="comments" class="comments-area">
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">コメントを残す
+			<small><a rel="nofollow" id="cancel-comment-reply-link" href="/?p=1#respond" style="display:none;">コメントをキャンセル</a>
+			</small>
+		</h3>
+		<form action="?" method="post" id="commentform" class="comment-form" novalidate="">
+			<p class="comment-notes">メールアドレスが公開されることはありません。
+				<span class="required">*</span>が付いている欄は必須項目です</p>
+			<p class="comment-form-author">
+				<label for="author">名前
+						<span class="required">*</span>
+				</label>
+				<input id="author" name="author" type="text" value="" size="30" aria-required="true">
+			</p>
+			<p class="comment-form-email">
+				<label for="email">メールアドレス
+						<span class="required">*</span>
+				</label>
+				<input id="email" name="email" type="email" value="" size="30" aria-required="true">
+			</p>
+			<p class="comment-form-url">
+				<label for="url">ウェブサイト</label>
+				<input id="url" name="url" type="url" value="" size="30">
+			</p>
+			<p class="comment-form-comment">
+				<label for="comment">コメント</label>
+				<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+			</p>
+			<p class="form-allowed-tags">次の
+				<abbr title="HyperText Markup Language">HTML</abbr>タグと属性が使えます:
+				<code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt;</code>
+			</p>
+			<p class="form-submit">
+				<input name="submit" type="submit" id="submit" value="コメントを送信">
+				<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+				<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+			</p>
+		</form>
+	</div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;comments&quot; class=&quot;comments-area&quot;&gt;
+	&lt;div id=&quot;respond&quot; class=&quot;comment-respond&quot;&gt;
+		&lt;h3 id=&quot;reply-title&quot; class=&quot;comment-reply-title&quot;&gt;コメントを残す
+			&lt;small&gt;&lt;a rel=&quot;nofollow&quot; id=&quot;cancel-comment-reply-link&quot; href=&quot;/?p=1#respond&quot; style=&quot;display:none;&quot;&gt;コメントをキャンセル&lt;/a&gt;
+			&lt;/small&gt;
+		&lt;/h3&gt;
+		&lt;form action=&quot;?&quot; method=&quot;post&quot; id=&quot;commentform&quot; class=&quot;comment-form&quot; novalidate=&quot;&quot;&gt;
+			&lt;p class=&quot;comment-notes&quot;&gt;メールアドレスが公開されることはありません。
+				&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;が付いている欄は必須項目です&lt;/p&gt;
+			&lt;p class=&quot;comment-form-author&quot;&gt;
+				&lt;label for=&quot;author&quot;&gt;名前
+						&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+				&lt;/label&gt;
+				&lt;input id=&quot;author&quot; name=&quot;author&quot; type=&quot;text&quot; value=&quot;&quot; size=&quot;30&quot; aria-required=&quot;true&quot;&gt;
+			&lt;/p&gt;
+			&lt;p class=&quot;comment-form-email&quot;&gt;
+				&lt;label for=&quot;email&quot;&gt;メールアドレス
+						&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+				&lt;/label&gt;
+				&lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; value=&quot;&quot; size=&quot;30&quot; aria-required=&quot;true&quot;&gt;
+			&lt;/p&gt;
+			&lt;p class=&quot;comment-form-url&quot;&gt;
+				&lt;label for=&quot;url&quot;&gt;ウェブサイト&lt;/label&gt;
+				&lt;input id=&quot;url&quot; name=&quot;url&quot; type=&quot;url&quot; value=&quot;&quot; size=&quot;30&quot;&gt;
+			&lt;/p&gt;
+			&lt;p class=&quot;comment-form-comment&quot;&gt;
+				&lt;label for=&quot;comment&quot;&gt;コメント&lt;/label&gt;
+				&lt;textarea id=&quot;comment&quot; name=&quot;comment&quot; cols=&quot;45&quot; rows=&quot;8&quot; aria-required=&quot;true&quot;&gt;&lt;/textarea&gt;
+			&lt;/p&gt;
+			&lt;p class=&quot;form-allowed-tags&quot;&gt;次の
+				&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;タグと属性が使えます:
+				&lt;code&gt;&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt;&lt;/code&gt;
+			&lt;/p&gt;
+			&lt;p class=&quot;form-submit&quot;&gt;
+				&lt;input name=&quot;submit&quot; type=&quot;submit&quot; id=&quot;submit&quot; value=&quot;コメントを送信&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;comment_post_ID&quot; value=&quot;1&quot; id=&quot;comment_post_ID&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;comment_parent&quot; id=&quot;comment_parent&quot; value=&quot;0&quot;&gt;
+			&lt;/p&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.8" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.8</span> WordPress 独自スタイル</h1>
+            
+            
+            <div class="kss-description">
+              <p>WordPress の ビジュアルエディターを利用して記事を投稿する際に
+定義しておくべきスタイルです。
+画像の位置や、キャプションなどを定義しています。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <h2>中央寄せ</h2>
+<img class="size-full aligncenter" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-580x300.jpg" width="580" height="300">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+<div class="clearfix"></div>
+<h2>左寄せ</h2>
+<img class="size-full alignleft" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-150x150.jpg" width="150" height="150">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+<div  class="clearfix"></div>
+<h2>右寄せ</h2>
+<img class="size-full alignright" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-300x200.jpg" width="300" height="200">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+<div  class="clearfix"></div>
+<h2>キャプション</h2>
+<figure class="wp-caption aligncenter">
+  <img class="size-full" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-580x300.jpg" width="580" height="300">
+  <figcaption class="wp-caption-text">
+    580×300 画像のキャプション例。
+  </figcaption>
+</figure>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;h2&gt;中央寄せ&lt;/h2&gt;
+&lt;img class=&quot;size-full aligncenter&quot; src=&quot;http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-580x300.jpg&quot; width=&quot;580&quot; height=&quot;300&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.&lt;/p&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;h2&gt;左寄せ&lt;/h2&gt;
+&lt;img class=&quot;size-full alignleft&quot; src=&quot;http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-150x150.jpg&quot; width=&quot;150&quot; height=&quot;150&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.&lt;/p&gt;
+&lt;div  class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;h2&gt;右寄せ&lt;/h2&gt;
+&lt;img class=&quot;size-full alignright&quot; src=&quot;http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-300x200.jpg&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.&lt;/p&gt;
+&lt;div  class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;h2&gt;キャプション&lt;/h2&gt;
+&lt;figure class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;img class=&quot;size-full&quot; src=&quot;http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-580x300.jpg&quot; width=&quot;580&quot; height=&quot;300&quot;&gt;
+  &lt;figcaption class=&quot;wp-caption-text&quot;&gt;
+    580×300 画像のキャプション例。
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          
+        </article>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

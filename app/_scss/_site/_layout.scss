@@ -1,7 +1,20 @@
-/**
- * レイアウト
- */
-
+// レイアウト
+//
+// メインカラム、サイドバー用のスタイルシートです
+//
+// Markup:
+// <div class="container">
+//   <div class="l-two-column">
+//     <div class="l-main">
+//       メインカラム
+//     </div>
+//     <div class="l-sidebar">
+//       サイドバー
+//     </div>
+//   </div>
+//</div>
+//
+// StyleGuide 2
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -42,4 +55,21 @@
     float: none;
   }
 
+}
+
+
+// ワンカラム
+//
+// ワンカラム時のスタイルシート定義です
+//
+// Markup:
+// <div class="l-one-column">
+//	<code>.l-one.column</code>
+// </div>
+//
+// StyleGuide 2.1
+.l-one-column{
+  background: #FCFCFC;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }

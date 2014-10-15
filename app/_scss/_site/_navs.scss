@@ -12,7 +12,7 @@
 //   </ul>
 // </div>
 //
-// Styleguide 1.1.
+
 
 .menu-navs{
   margin-bottom: 24px;
@@ -24,9 +24,9 @@
       margin-right: 16px;
       a{
         display: inline-block;
-        color: #454545;
+        color: $base-font-color;
         text-decoration: none;
-        border: 1px solid #e8e8e8;
+        border: $base-border;
         line-height: 3em;
         padding-left: 16px;
         padding-right: 16px;

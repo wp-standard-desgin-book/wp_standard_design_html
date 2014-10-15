@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+// カラー
+$black      : #000;
+$white      : #FFFFFF !default;
+$gray       : #e8e8e8 !default;
+$gray-light : #F5F5F5 !default;
+
+// フォント
+$base-font-family  : 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif !default;
+$base-font-color   : #454545 !default;
+$base-font-size    : 14px    !default;
+$base-line-height  : 1.7em   !default;
+
+
+// 見出し
+$heading-font        : 'Lato', sans-serif !default;
+$heading-font-weight :  700 !default;
+
+// 各見出しフォントサイズ
+$h1-font-size :    2em !default;
+$h2-font-size :    1.8em !default;
+$h3-font-size :    1.6em !default;
+$h4-font-size :    1.4em !default;
+$h5-font-size :    1.2em !default;
+$h6-font-size :    1em !default;
+
+// 線
+
+$base-border-width: 1px;
+$base-border-color: $gray;
+$base-border-style: solid;
+
+// 通常のボーダー : 1px solid #e8e8e8
+$base-border: $base-border-width $base-border-style $base-border-color;

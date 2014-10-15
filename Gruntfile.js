@@ -302,6 +302,7 @@ module.exports = function (grunt) {
 		},
 		kss: {
 			options: {
+				template: 'template',
 				includeType: 'css',
 				includePath: 'dist/css/main.css'
 			},
@@ -418,7 +419,7 @@ module.exports = function (grunt) {
 		// 'imagemin',
 		// 'svgmin',
 		'usemin',
-		// 'htmlmin'
+		'styleguide'
 		]);
 
 	grunt.registerTask('styleguide', [

@@ -1,226 +1,516 @@
-// Entry Content
+// コンテンツ
 //
-// 投稿記事内のスタイル定義です
+// 投稿記事内のコンテンツのガイドです
 //
+// Styleguide 6
+
+
+// 見出し
+//
+//
+// 投稿記事内の見出しスタイル定義です。<br>
+//
+// .entry-content 要素の子要素の場合に
+// 各見出しタグにスタイルが適用されます。
 //
 // Markup:
 // <div class="entry-content">
-//   <h2>h2 見出し</h2>
+//   <h1>見出し - h1</h1>
+//   <h2>見出し - h2</h2>
+//   <h3>見出し - h3</h3>
+//   <h4>見出し - h4</h4>
+//   <h5>見出し - h5</h5>
+//   <h6>見出し - h6</h6>
+// </div>
+//
+// Styleguide 6.1
+
+.entry-header{
+	.entry-title{
+		background-image: url(/images/bg-entry-header.png);
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		padding-bottom: 16px;
+		font-size: 24px;
+		letter-spacing: 4px;
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+}
+
+.entry-content {
+	h1{
+		background-image: url(/images/bg-entry-header.png);
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		padding-bottom: 16px;
+		font-size: 24px;
+		letter-spacing: 4px;
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+	h2 {
+		font-size: 20px;
+		line-height: 1.5em;
+
+		margin-top: 24px;
+		margin-bottom: 24px;
+		padding-bottom: 14px;
+
+		color: $base-font-color;
+		border-bottom: 1px solid $gray;
+	}
+
+	h3 {
+		font-size: 18px;
+		line-height: 27px;
+
+		position: relative;
+
+		margin-bottom: 16px;
+		padding-bottom: 5px;
+
+		border-bottom: 1px solid $gray;
+		&:before {
+			display: inline-block;
+
+			width: 10px;
+			height: 10px;
+			margin-right: 8px;
+			margin-left: 8px;
+
+			content: '';
+
+			-webkit-border-radius: 50%;
+							border-radius: 50%;
+
+			background: #ffcfae;
+			background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+			background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+			background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+			background-image:      linear-gradient(-134deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+		}
+	}
+	h4 {
+		font-size: 16px;
+
+		margin-top: 8px;
+		margin-bottom: 8px;
+		&:before {
+			display: inline-block;
+
+			margin-right: 0;
+			margin-left: 0;
+
+			content: '・';
+		}
+	}
+
+	h5{
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	h6{
+		font-size: 14px;
+		font-weight: 100;
+	}
+
+}
+
+// テキストのスタイル
+//
+// 投稿記事内のテキストのスタイル定義です。<br>
+// 基本的に、class をつけずにHTMLタグを利用し、
+// .entry-content 内のスタイル定義をしています。
+//
+// Markup:
+// <div class="entry-content">
+//   <h2>段落 </h2>
 //   <p>文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章</p>
-//   <h3>h3 見出し</h3>
-//   <h4>h4 見出し</h4>
+//   <h2>small タグ</h2>
+//   <p><small>少し小さなテキストです。</small></p>
+//   <h2>strong タグ</h2>
+//   <p><strong>強調テキストです。</strong></p>
+//   <h2>定義リスト</h2>
 //   <dl>
 //     <dt>定義リスト</dt>
 //     <dd>定義リストコンテンツ</dd>
 //   </dl>
+//   <h2>pre タグ</h2>
+//   <pre>
+//     .entry-content{
+//       pre{
+//         background: $gray;
+//         padding: 16px;
+//       }
+//     }
+//   </pre>
+//   <h2>code タグ</h2>
+//   <code>
+//     &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt;
+//   </code>
 // </div>
 //
-// Styleguide 1
-.entry-content{
-	h2{
-		color: #454545;
-		line-height: 1.5em;
-		border-bottom: 1px solid #e8e8e8;
-		padding-bottom: 14px;
-		margin-top: 24px;
-		margin-bottom: 24px;
-		font-size: 20px;
-	}
-	p{
+// Styleguide 6.2
+
+.entry-content {
+	p {
 		line-height: 2em;
+
 		margin-top: 0;
 		margin-bottom: 8px;
 	}
-	/* Rectangle 5: */
-	h3{
-		font-size: 18px;
-		position: relative;
-		line-height: 27px;
-		border-bottom: 1px solid #e8e8e8;
-		padding-bottom: 5px;
-		margin-bottom: 16px;
-		&:before{
-			margin-left: 8px;
-			margin-right: 8px;
-			content: "";
-			display: inline-block;
-			width: 10px;
-			height: 10px;
-			-webkit-border-radius: 50%;
-							border-radius: 50%;
-			// position: absolute;
-			background: #FFCFAE;
-			background-image: -o-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-			background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-			background-image: -ms-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-			background-image: linear-gradient(-134deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-		}
-	}
 
-	h4{
-		margin-bottom: 8px;
-		margin-top: 8px;
-		font-size: 16px;
-		&:before{
-			margin-left: 0px;
-			margin-right: 0px;
-			content: "・";
+	dl {
+		dt {
 			display: inline-block;
-		}
-	}
 
-	dl{
-		dt{
-			display: inline-block;
-			border-bottom: 1px dashed #e8e8e8;
 			margin-bottom: 1.14297em;
+
+			border-bottom: 1px dashed $gray;
 		}
-		dd{
+		dd {
+			margin-bottom: 1.14297em;
 			margin-left: 1.14297em;
-			margin-bottom: 1.14297em;
 		}
 	}
 
-	table{
-		th,td{
-			text-align: center;
-			line-height: 2em;
-			border: 1px solid #e8e8e8;
-		}
-		th{
-			font-weight: normal;
-			background: #F7F7F7;
-			padding-left: 0;
-		}
+	small{
+		font-size: 0.8em;
 	}
 
+	strong{
+		font-weight: bold;
+		color: #905643;
+	}
+
+	pre{
+		background: $gray;
+		padding: 16px;
+	}
+
+	code{
+		background: $gray;
+		display: inline;
+		padding: 2px 5px;
+	}
+
+}
+
+// テーブル
+//
+// 投稿記事内のテーブルのスタイルです。
+//
+// Markup:
+// <div class="entry-content">
+//   <table>
+//     <thead>
+//       <tr>
+//         <th>
+//           table > thead > tr > th
+//         </th>
+//         <th>
+//           table > thead > tr > th
+//         </th>
+//       </tr>
+//     </thead>
+//     <tbody>
+//       <tr>
+//         <td>
+//           table > tbody > tr > td
+//         </td>
+//         <td>
+//           table > tbody > tr > td
+//         </td>
+//       </tr>
+//       <tr>
+//         <td>
+//           table > tbody > tr > td
+//         </td>
+//         <td>
+//           table > tbody > tr > td
+//         </td>
+//       </tr>
+//     </tbody>
+//   </table>
+// </div>
+//
+// Styleguide 6.3
+.entry-content {
+		table {
+				th,
+				td {
+						line-height: 2em;
+
+						text-align: center;
+
+						border: 1px solid $gray;
+				}
+				th {
+						font-weight: normal;
+
+						padding-left: 0;
+
+						background: #f7f7f7;
+				}
+		}
+}
+
+
+// お問い合わせフォーム
+//
+// お問い合わせフォーム用のスタイル定義です。
+// table タグに <code>.contact-form</code> クラスを付与してください。
+//
+// Markup:
+// <table class="contact-form">
+// 	<tbody>
+// 		<tr>
+// 			<th>
+// 				お名前 <span class="text-danger">*</span>
+// 			</th>
+// 			<td>
+// 				<input type="text" name="name" value="">
+// 			</td>
+// 		</tr>
+// 		<tr>
+// 			<th>
+// 				メールアドレス <span class="text-danger">*</span>
+// 			</th>
+// 			<td>
+// 				<input type="text" name="e-mail" value="">
+// 			</td>
+// 		</tr>
+// 		<tr>
+// 			<th>
+// 				タイトル
+// 			</th>
+// 			<td>
+// 				<input type="text" name="title" value="">
+// 			</td>
+// 		</tr>
+// 		<tr>
+// 			<th>
+// 				お問い合わせ内容 <span class="text-danger">*</span>
+// 			</th>
+// 			<td>
+// 				<textarea name="content" >
+// 				</textarea>
+// 			</td>
+// 		</tr>
+// 	</tbody>
+// </table>
+//
+// Styleguide 6.4
+table.contact-form {
+		margin-bottom: 2em;
+
+		border: $base-border;
+		th {
+				width: 30%;
+				padding-top: 1.3em;
+				padding-bottom: 1.3em;
+				padding-left: 2.6em;
+
+				vertical-align: top;
+		}
+		td {
+				width: 70%;
+				padding-top: 1.3em;
+				padding-bottom: 1.3em;
+				padding-left: 2em;
+
+				text-align: left;
+				textarea,
+				input {
+						width: auto;
+						min-width: 70%;
+				}
+		}
+		textarea {
+				min-height: 200px;
+		}
 }
 
 
 // ブログアーカイブ
-.blog-archive{
-	.hentry{
-		border: 1px solid #e8e8e8;
+.blog-archive {
+		.hentry {
+				margin-bottom: 24px;
+				padding: 24px;
+
+				border: $base-border;
+		}
+		.entry-content {
+				.entry-title {
+						font-size: 16px;
+
+						float: left;
+
+						margin-bottom: 16px;
+						padding-bottom: 0;
+
+						letter-spacing: 0;
+
+						border-bottom: none;
+						background: none;
+						a {
+								text-decoration: none;
+
+								color: $base-font-color;
+						}
+				}
+				.entry-header {
+						display: inline-block;
+
+						width: 100%;
+				}
+				.thumbnail {
+						float: left;
+
+						margin-right: 16px;
+				}
+		}
+}
+
+
+// 投稿メタデータ
+//
+// 投稿の著者情報、投稿日、カテゴリリンクのためのメタデータです。
+//
+// Markup:
+// <div class="entry-meta">
+// 	<span class="author">
+// 		投稿者 : wp-standard-design-book
+// 	</span>
+// 	<span class="date">
+// 		<time class="entry-date" datetime="2014-09-22T04:29:32+00:00">2014年9月22日</time>
+// 	</span>
+// 	<span class="categories-links info">
+// 		<a href="http://test.wordpress.com/?cat=1" rel="category">新着情報</a>
+// 	</span>
+// </div>
+//
+// Styleguide 6.5
+.entry-meta {
 		margin-bottom: 24px;
-		padding: 24px;
-	}
-	.entry-content{
-		.entry-title{
-			font-size: 16px;
-			border-bottom: none;
-			background: none;
-			padding-bottom: 0;
-			float: left;
-			letter-spacing: 0;
-			margin-bottom: 16px;
-			a{
-				color: #454545;
-				text-decoration: none;
-			}
+
+		text-align: right;
+		.author {
+				float: left;
 		}
-		.entry-header{
-			display: inline-block;
-			width: 100%;
+		.date {
+				padding: 4px 16px;
+
+				border: $base-border;
 		}
-		.thumbnail{
-			float: left;
-			margin-right: 16px;
+		.categories-links {
+				margin-left: 16px;
+				padding: 4px 16px;
+
+				border: $base-border;
+				a {
+						font-size: 12px;
+
+						text-decoration: none;
+
+						color: #fff;
+				}
+				&.limited {
+						background: #b5ad55;
+				}
+				&.info {
+						background: #8b6c6c;
+				}
 		}
-	}
 }
 
-.entry-meta{
-	// float: right;
-	text-align: right;
-	margin-bottom: 24px;
-	.author{
-		float: left;
-	}
-	.date{
-		border: 1px solid #e8e8e8;
-		padding: 4px 16px;
-		// float: right;
-	}
-	.categories-links{
-		// float: right;
-		border: 1px solid #e8e8e8;
-		padding: 4px 16px;
-		margin-left: 16px;
-		a{
-			color: #FFF;
-			text-decoration: none;
-			font-size: 12px;
-		}
-		&.limited{
-			background: #B5AD55;
-		}
-		&.info{
-			background: #8B6C6C;
-		}
-	}
-}
-
-
+// 投稿ナビゲーション
+//
+// 「次の記事へ」「前の記事へ」のリンクのためのナビゲーションです。
+//
+// Markup:
+// <nav class="navigation post-navigation" role="navigation">
+// 	<h1 class="screen-reader-text">投稿ナビゲーション</h1>
+// 	<div class="nav-links">
+// 		<a href="/" rel="prev"><span class="meta-nav">←</span> 前の記事へ</a>
+// 		<a href="/" rel="next">次の記事へ<span class="meta-nav">→</span></a>
+// 	</div>
+// </nav>
+//
+// Styleguide 6.6
 .post-navigation {
-	background-color: #fff;
-	color: #FFF;
-	font-size: 14px;
-	font-weight: 300;
-	padding: 20px 0;
+		font-size: $base-font-size;
+		font-weight: 300;
+		padding: 20px 0;
+
+		color: #fff;
+		background-color: #fff;
 }
 
 .post-navigation .nav-links {
-	margin: 0 auto;
-	a{
-		color: #FFF;
-		text-decoration: none;
-		background: #7D5031;
-		background-image: -o-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-		background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-		background-image: -ms-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-		background-image: linear-gradient(-134deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-		width: 214px;
-		text-align: center;
-		display: inline-block;
-		line-height: 1.6em;
-		position: relative;
-		&:after{
-			content: '';
-			width: 226px;
-			height: 36px;
-			position: absolute;
-			border: 1px solid #e8e8e8;
-			left: -8px;
-			top: -8px;
+		margin: 0 auto;
+		a {
+				line-height: 1.6em;
+
+				position: relative;
+
+				display: inline-block;
+
+				width: 214px;
+
+				text-align: center;
+				text-decoration: none;
+
+				color: #fff;
+				background: #7d5031;
+				background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				background-image:      linear-gradient(-134deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				&:after {
+						position: absolute;
+						top: -8px;
+						left: -8px;
+
+						width: 226px;
+						height: 36px;
+
+						content: '';
+
+						border: $base-border;
+				}
 		}
-	}
 }
 
 
-.post-navigation a[rel="next"] {
-	float: right;
-	text-align: center;
-}
-
-.menu-content{
-	overflow: hidden;
-
-	.menu-thumbnail{
-		padding: 5px;
-		border: 1px solid #e8e8e8;
-		width: 256px;
-		float: left;
-		margin-right: 24px;
-		img{
-			max-width: 100%;
-		}
-	}
-	.menu-detail{
-		width: 431px;
+.post-navigation a[rel='next'] {
 		float: right;
-		p{
-			margin-bottom: 48px;
-		}
-	}
+
+		text-align: center;
 }
 
+.menu-content {
+		overflow: hidden;
+		.menu-thumbnail {
+				float: left;
+
+				width: 256px;
+				margin-right: 24px;
+				padding: 5px;
+
+				border: $base-border;
+				img {
+						max-width: 100%;
+				}
+		}
+		.menu-detail {
+				float: right;
+
+				width: 431px;
+				p {
+						margin-bottom: 48px;
+				}
+		}
+}

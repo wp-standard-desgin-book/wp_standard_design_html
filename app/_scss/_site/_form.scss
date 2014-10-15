@@ -7,7 +7,7 @@ input[type=email],
 input[type=url],
 input[type=password],
 textarea{
-    border: 2px solid #e8e8e8;
+    border: 2px solid $gray;
     line-height: 1.7em;
 }
 
@@ -44,7 +44,7 @@ textarea{
 
 .btn{
   display: inline-block;
-  border: 1px solid #e8e8e8;
+  border: $base-border;
   padding: 5px;
   background: #FFF;
 }

@@ -1,18 +1,32 @@
-// WordPress
+// WordPress 独自スタイル
 //
-// WordPress 用の スタイル定義
+// WordPress の ビジュアルエディターを利用して記事を投稿する際に
+// 定義しておくべきスタイルです。
+// 画像の位置や、キャプションなどを定義しています。
+//
 //
 // Markup:
-// <div class="menu-navs">
-//   <ul>
-//     <li>リスト</li>
-//     <li>リスト</li>
-//     <li>リスト</li>
-//     <li>リスト</li>
-//   </ul>
-// </div>
+// <h2>中央寄せ</h2>
+// <img class="size-full aligncenter" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-580x300.jpg" width="580" height="300">
+// <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+// <div class="clearfix"></div>
+// <h2>左寄せ</h2>
+// <img class="size-full alignleft" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-150x150.jpg" width="150" height="150">
+// <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+// <div  class="clearfix"></div>
+// <h2>右寄せ</h2>
+// <img class="size-full alignright" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-300x200.jpg" width="300" height="200">
+// <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+// <div  class="clearfix"></div>
+// <h2>キャプション</h2>
+// <figure class="wp-caption aligncenter">
+//   <img class="size-full" src="http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-580x300.jpg" width="580" height="300">
+//   <figcaption class="wp-caption-text">
+//     580×300 画像のキャプション例。
+//   </figcaption>
+// </figure>
 //
-// Styleguide 1.1.
+// Styleguide 6.8
 .alignnone {
     margin: 5px 20px 20px 0;
 }

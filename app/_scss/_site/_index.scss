@@ -1,3 +1,16 @@
+// トップページ
+//
+// トップページのメインビジュアル用スタイルシート
+//
+// Markup:
+// <div class="visual">
+//   <img src="/images/main-visual.png" alt="いっぱいに込める思い。OzoneCafe">
+//   <div class="container">
+//     <h1 class="site-desctiption">いっぱいに込める思い</h1>
+//   </div>
+// </div>
+//
+// Styleguide 7
 .visual{
   .container{
     position: relative;
@@ -17,12 +30,29 @@
   }
 }
 
-
-.l-one-column{
-  background: #FCFCFC;
-  padding-top: 4em;
-  padding-bottom: 4em;
-}
+// トップページ - バナー
+//
+// メインバナー用のスタイル定義です。
+//
+// Markup:
+// <section class="home posts">
+//   <div class="home-banner">
+//     <ul>
+//       <li>
+//         <a href="/menus/">
+//           <img src="/images/home-banner-menu.png" alt="">
+//         </a>
+//       </li>
+//       <li>
+//         <a href="/shop/">
+//           <img src="/images/home-banner-access.png" alt="">
+//         </a>
+//       </li>
+//     </ul>
+//   </div>
+// </section>
+//
+// Styleguide 7.1
 
 .home-banner{
   li{
@@ -31,15 +61,3 @@
   }
 }
 
-.entry-header{
-  .entry-title{
-    background-image: url(/images/bg-entry-header.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    padding-bottom: 16px;
-    font-size: 24px;
-    letter-spacing: 4px;
-    margin-top: 0;
-    margin-bottom: 24px;
-  }
-}

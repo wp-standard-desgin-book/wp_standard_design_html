@@ -1,6 +1,6 @@
-// Footer
+// フッター
 //
-// フッターのスタイル定義
+// フッターのスタイル定義です。
 //
 // Markup:
 // <footer id="colophon" class="footer text-center">
@@ -56,10 +56,10 @@
 //   </div>
 // </footer>
 //
-// Styleguide 2
+// Styleguide 5
 .footer{
   background: #F6F6F6;
-  border-top: 1px solid #e8e8e8;
+  border-top: $base-border;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -78,7 +78,7 @@
     display: inline-block;
   }
   a{
-    color: #454545;
+    color: $base-font-color;
     text-decoration: none;
     padding-left: 16px;
     padding-right: 16px;
