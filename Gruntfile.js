@@ -1,4 +1,3 @@
-// Generated on 2014-10-07 using generator-jekyllrb 1.2.1
 'use strict';
 
 // Directory reference:
@@ -9,7 +8,7 @@
 //   fonts: fonts
 
 module.exports = function (grunt) {
-	// Show elapsed time after tasks run
+
 	require('time-grunt')(grunt);
 	// Load all Grunt tasks
 	require('load-grunt-tasks')(grunt);
@@ -27,7 +26,7 @@ module.exports = function (grunt) {
 			},
 			autoprefixer: {
 				files: ['<%= yeoman.app %>/css/**/*.css'],
-				tasks: ['copy:stageCss', 'autoprefixer:server']
+				tasks: ['copy:stageCss','autoprefixer:server']
 			},
 			jekyll: {
 				files: [
@@ -140,7 +139,7 @@ module.exports = function (grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= yeoman.dist %>/css',
+					cwd: '.tmp/css',
 					src: '**/*.css',
 					dest: '<%= yeoman.dist %>/css'
 				}]
@@ -263,6 +262,17 @@ module.exports = function (grunt) {
 					dest: '<%= yeoman.dist %>'
 				}]
 			},
+			distCss: {
+				files: [{
+					expand: true,
+					dot: true,
+					cwd: '.tmp/css',
+					src: [
+						'**/*.css'
+					],
+					dest: '<%= yeoman.dist %>'
+				}]
+			},
 			// Copy CSS into .tmp directory for Autoprefixer processing
 			stageCss: {
 				files: [{
@@ -331,7 +341,8 @@ module.exports = function (grunt) {
 			],
 			dist: [
 				'compass:dist',
-				'copy:dist'
+				'copy:dist',
+				'copy:distCss'
 			]
 		},
 		browserSync: {
@@ -348,27 +359,44 @@ module.exports = function (grunt) {
 						}
 				}
 		},
-		dss: {
-			docs: {
-				files: {
-					'app/': '_scss/**/*.{css,scss,sass,less,styl}'
-				},
-				options: {
-					template: '/dark_theme/',
-					parsers: {
-						link: function(i, line, block){
-							var exp = '/(b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig';
-							line.replace(exp, "<a href='$1'>$1</a>");
-							return line;
-						}
-					}
-				}
-			}
+		prettify: {
+			options: {
+				config: '.prettifyrc'
+			},
+			all: {
+				expand: true,
+				cwd: 'dist/',
+				ext: '.html',
+				src: ['*.html'],
+				dest: 'dist/'
+			},
+			shop: {
+				expand: true,
+				cwd: 'dist/shop/',
+				ext: '.html',
+				src: ['*.html'],
+				dest: 'dist/shop/'
+			},
+			menus: {
+				expand: true,
+				cwd: 'dist/menus/',
+				ext: '.html',
+				src: ['*.html'],
+				dest: 'dist/menus/'
+			},
+			blog: {
+				expand: true,
+				cwd: 'dist/blog/',
+				ext: '.html',
+				src: ['*.html'],
+				dest: 'dist/blog/'
+			},
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-kss');
 	grunt.loadNpmTasks('grunt-browser-sync');
+	grunt.loadNpmTasks('grunt-prettify');
 
 	// Define Tasks
 	grunt.registerTask('serve',['browserSync'], function (target) {
@@ -391,13 +419,6 @@ module.exports = function (grunt) {
 		grunt.task.run(['serve']);
 	});
 
-	// No real tests yet. Add your own.
-	grunt.registerTask('test', [
-	//   'clean:server',
-	//   'concurrent:test',
-	//   'connect:test'
-	]);
-
 	grunt.registerTask('check', [
 		'clean:server',
 		'jekyll:check',
@@ -408,19 +429,20 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('build', [
 		'clean',
-		// Jekyll cleans files from the target directory, so must run first
 		'jekyll:dist',
 		'concurrent:dist',
 		'useminPrepare',
 		'concat',
 		'autoprefixer:dist',
-		'cssmin',
 		'uglify',
 		// 'imagemin',
-		// 'svgmin',
 		'usemin',
 		'styleguide'
 		]);
+
+	grunt.registerTask('htmlautofixer',[
+		'prettify'
+	]);
 
 	grunt.registerTask('styleguide', [
 		'clean:styleguide',
