@@ -21,6 +21,12 @@
   max-width: 1000px;
   width: 100%;
   @extend .clearfix;
+  @media screen and (max-width: 640px) {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
 }
 
 .l-two-column{
@@ -34,7 +40,7 @@
   padding-top: 24px;
 
   @media screen and (max-width: 640px) {
-    max-width: 98%;
+    max-width: 94%;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -49,10 +55,11 @@
   padding-top: 24px;
 
   @media screen and (max-width: 640px) {
-    max-width: 98%;
+    max-width: 94%;
     margin-left: auto;
     margin-right: auto;
     float: none;
+    text-align: center;
   }
 
 }

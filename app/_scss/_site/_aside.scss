@@ -98,4 +98,9 @@
             }
         }
     }
+		@media screen and(max-width: 640px) {
+			width: 250px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 }

@@ -282,6 +282,15 @@ module.exports = function (grunt) {
 					src: '**/*.css',
 					dest: '.tmp/css'
 				}]
+			},
+			styleGuideImage: {
+				files: [{
+					expand: true,
+					dot: true,
+					cwd: '<%= yeoman.app %>',
+					src: ['images/**/*'],
+					dest: 'styleguide'
+				}]
 			}
 		},
 		filerev: {
@@ -391,12 +400,28 @@ module.exports = function (grunt) {
 				src: ['*.html'],
 				dest: 'dist/blog/'
 			},
+		},
+		replace: {
+		  dist: {
+		    src: ['dist/menus/*.html'],
+	      dest: 'dist/menus',
+	      replacements: [{
+	        from: '<img src="/images',
+	        to: '<img src="images'
+	      }, {
+	        from: 'href="/',
+	        to: 'href="'
+	      }, {
+	        from: 'src="/js',
+	        to: 'src="js'
+	      }, {
+	        from: 'url(/',
+	        to: 'url('
+	      }]
+	    }
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-kss');
-	grunt.loadNpmTasks('grunt-browser-sync');
-	grunt.loadNpmTasks('grunt-prettify');
 
 	// Define Tasks
 	grunt.registerTask('serve',['browserSync'], function (target) {
@@ -437,16 +462,23 @@ module.exports = function (grunt) {
 		'uglify',
 		// 'imagemin',
 		'usemin',
-		'styleguide'
+		'styleguide',
+		'htmlautofixer',
+		// 'stringreplace'
 		]);
 
 	grunt.registerTask('htmlautofixer',[
 		'prettify'
 	]);
 
+	grunt.registerTask('stringreplace',[
+		'replace'
+	]);
+
 	grunt.registerTask('styleguide', [
 		'clean:styleguide',
-		'kss'
+		'kss',
+		'copy:styleGuideImage'
 	]);
 
 	grunt.registerTask('default', [

@@ -29,7 +29,8 @@
     "time-grunt": "~0.2.8",
     "grunt-browser-sync": "^1.5.3",
     "grunt-kss": "^0.4.0",
-    "grunt-prettify": "^0.4.0"
+    "grunt-prettify": "^0.4.0",
+    "grunt-text-replace": "^0.3.12"
   },
   "engines": {
     "node": ">=0.8.0"

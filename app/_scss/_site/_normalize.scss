@@ -152,6 +152,7 @@ img {
 		border: 0;
 		vertical-align: top;
 		outline: 0;
+		max-width: 100%;
 }
 
 svg:not(:root) {
@@ -160,6 +161,10 @@ svg:not(:root) {
 
 figure {
 		margin: 0;
+}
+
+iframe{
+	max-width: 100%;
 }
 
 /* ==========================================================================
