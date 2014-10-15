@@ -440,48 +440,50 @@ table.contact-form {
 // </nav>
 //
 // Styleguide 6.6
-.post-navigation {
-		font-size: $base-font-size;
-		font-weight: 300;
-		padding: 20px 0;
+.post-navigation,
+.paging-navigation {
+	font-size: $base-font-size;
+	font-weight: 300;
+	padding: 20px 0;
 
-		color: #fff;
-		background-color: #fff;
+	color: #fff;
+	background-color: #fff;
 }
 
-.post-navigation .nav-links {
-		margin: 0 auto;
-		a {
-				line-height: 1.6em;
+.post-navigation .nav-links,
+.paging-navigation .nav-links {
+	margin: 0 auto;
+	a {
+		line-height: 1.7em;
 
-				position: relative;
+		position: relative;
 
-				display: inline-block;
+		display: inline-block;
 
-				width: 214px;
+		width: 214px;
 
-				text-align: center;
-				text-decoration: none;
+		text-align: center;
+		text-decoration: none;
 
-				color: #fff;
-				background: #7d5031;
-				background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-				background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-				background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-				background-image:      linear-gradient(-134deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-				&:after {
-						position: absolute;
-						top: -8px;
-						left: -8px;
+		color: #fff;
+		background: #7d5031;
+		background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+		background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+		background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+		background-image:      linear-gradient(-134deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+		&:after {
+				position: absolute;
+				top: -7px;
+				left: -7px;
 
-						width: 226px;
-						height: 36px;
+				width: 226px;
+				height: 36px;
 
-						content: '';
+				content: '';
 
-						border: $base-border;
-				}
+				border: $base-border;
 		}
+	}
 }
 
 
@@ -489,6 +491,15 @@ table.contact-form {
 		float: right;
 
 		text-align: center;
+}
+
+.paging-navigation{
+	.nav-previous{
+		float: left;
+	}
+	.nav-next{
+		float: right;
+	}
 }
 
 .menu-content {
@@ -514,3 +525,4 @@ table.contact-form {
 				}
 		}
 }
+

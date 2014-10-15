@@ -33,25 +33,29 @@
     <!-- ヘッダー - グローバルナビゲーション -->
     <nav class="header-navigation">
 
-      <ul>
+      <ul class="nav-menu">
 
-        <li>
+        <li class="menu-item">
           <a href="/" title="HOME">HOME</a>
         </li>
 
-        <li>
-          <a href="/shop/" title="SHOP">SHOP</a>
-        </li>
+				<li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
+					<a href="/shop/">SHOP</a>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-home menu-item-2078"><a href="/shop/taste.html">こだわり</a></li>
+						<li class="menu-item menu-item-home menu-item-2079"><a href="/shop/history.html">歴史</a></li>
+					</ul>
+				</li>
 
-        <li>
+        <li class="menu-item">
           <a href="/menus/" title="MENUS">MENUS</a>
         </li>
 
-        <li>
+        <li class="menu-item">
           <a href="/contact.html" title="CONTACT">CONTACT</a>
         </li>
 
-        <li>
+        <li class="menu-item">
           <a href="/blog/" title="BLOG">BLOG</a>
         </li>
 
@@ -150,6 +154,23 @@
 	</div>
 
 </article>
+
+<nav class="navigation paging-navigation" role="navigation">
+	<h1 class="screen-reader-text">投稿ナビゲーション</h1>
+	<div class="nav-links">
+		<div class="nav-previous">
+			<a href="/">
+				<span class="meta-nav">←</span> 古い投稿
+			</a>
+		</div>
+		<div class="nav-next">
+			<a href="/">
+				新しい投稿 <span class="meta-nav">→</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
 
       </div>
 
