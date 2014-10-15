@@ -314,7 +314,7 @@ module.exports = function (grunt) {
 			options: {
 				template: 'template',
 				includeType: 'css',
-				includePath: 'dist/css/main.css'
+				includePath: 'dist/css/style.css'
 			},
 			dist:{
 				files:{
@@ -428,7 +428,7 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.registerTask('build', [
-		'clean',
+		'clean:dist',
 		'jekyll:dist',
 		'concurrent:dist',
 		'useminPrepare',
