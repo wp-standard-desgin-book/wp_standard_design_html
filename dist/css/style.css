@@ -343,6 +343,7 @@ table th {
 .nav-menu li {
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 .nav-menu li:hover {
   background-color: #F5F5F5;
@@ -382,6 +383,15 @@ table th {
   height: 1px;
   width: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+}
+@media screen and (max-width: 640px) {
+  .nav-menu .sub-menu {
+    position: static;
+    clip: inherit;
+    overflow: hidden;
+    height: inherit;
+    width: inherit;
+  }
 }
 .nav-menu .sub-menu li {
   text-align: left;
@@ -624,6 +634,14 @@ textarea {
 .home-banner li {
   display: inline-block;
   margin-right: 24px;
+  max-width: 44%;
+}
+@media screen and (max-width: 640px) {
+  .home-banner li {
+    margin-bottom: 2em;
+    text-align: center;
+    max-width: 100%;
+  }
 }
 
 .entry-header .entry-title {
@@ -765,6 +783,21 @@ table.contact-form td input {
 table.contact-form textarea {
   min-height: 200px;
 }
+@media screen and (max-width: 640px) {
+  table.contact-form {
+    display: block;
+  }
+  table.contact-form tbody,
+  table.contact-form thead,
+  table.contact-form th, table.contact-form td, table.contact-form tr {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  table.contact-form th, table.contact-form td {
+    padding-left: 1em;
+  }
+}
 
 .blog-archive .hentry {
   margin-bottom: 24px;
@@ -902,6 +935,14 @@ table.contact-form textarea {
 .paging-navigation .nav-next {
   float: right;
 }
+@media screen and (max-width: 640px) {
+  .paging-navigation .nav-previous {
+    float: none;
+  }
+  .paging-navigation .nav-next {
+    float: none;
+  }
+}
 
 .menu-content {
   overflow: hidden;
@@ -945,6 +986,17 @@ table.contact-form textarea {
 .footer-navigation li {
   display: inline-block;
 }
+@media screen and (max-width: 640px) {
+  .footer-navigation li {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .footer-navigation li a {
+    line-height: 4em;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
 .footer-navigation a {
   color: #454545;
   text-decoration: none;
@@ -956,6 +1008,12 @@ table.contact-form textarea {
 }
 .footer-navigation a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 640px) {
+  .footer-navigation a {
+    display: block;
+    width: 100%;
+  }
 }
 
 .footer-copyright {

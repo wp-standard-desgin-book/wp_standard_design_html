@@ -30,6 +30,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 html * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -233,9 +234,6 @@ ul {
 
 a img {
   -webkit-transition: opacity ease-in .2s;
-  -moz-transition: opacity ease-in .2s;
-  -ms-transition: opacity ease-in .2s;
-  -o-transition: opacity ease-in .2s;
   transition: opacity ease-in .2s;
 }
 a img:hover {
@@ -345,6 +343,7 @@ table th {
 .nav-menu li {
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 .nav-menu li:hover {
   background-color: #F5F5F5;
@@ -364,9 +363,6 @@ table th {
   padding-right: 16px;
   padding-left: 28px;
   -webkit-transition: background ease-in 0.2s;
-  -moz-transition: background ease-in 0.2s;
-  -ms-transition: background ease-in 0.2s;
-  -o-transition: background ease-in 0.2s;
   transition: background ease-in 0.2s;
   text-decoration: none;
   letter-spacing: 2.2px;
@@ -374,7 +370,6 @@ table th {
   background-image: url(/images/arrow-middle.png);
   background-repeat: no-repeat;
   background-position: 12px 14px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 .nav-menu .sub-menu {
@@ -388,6 +383,15 @@ table th {
   height: 1px;
   width: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+}
+@media screen and (max-width: 640px) {
+  .nav-menu .sub-menu {
+    position: static;
+    clip: inherit;
+    overflow: hidden;
+    height: inherit;
+    width: inherit;
+  }
 }
 .nav-menu .sub-menu li {
   text-align: left;
@@ -540,7 +544,6 @@ table th {
 }
 .widget_category ul li a:active {
   background-color: #e8e8e8;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 640px) {
@@ -573,13 +576,9 @@ textarea {
   margin-left: 0;
   margin-right: 0;
   background: #7D5031;
-  background-image: -o-linear-gradient(-44deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
-  background-image: -moz-linear-gradient(-44deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
-  background-image: -ms-linear-gradient(-44deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
+  background-image: -webkit-linear-gradient(224deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
   background-image: linear-gradient(-134deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
-  background-image: -o-linear-gradient(-89deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.21) 100%);
-  background-image: -moz-linear-gradient(-89deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.21) 100%);
-  background-image: -ms-linear-gradient(-89deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.21) 100%);
+  background-image: -webkit-linear-gradient(269deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.21) 100%);
   background-image: linear-gradient(-179deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.21) 100%);
   border: 1px solid #D0D0D0;
   color: #FFFFFF;
@@ -587,7 +586,6 @@ textarea {
   line-height: 1.7em;
   font-weight: normal;
   letter-spacing: 3px;
-  -webkit-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
 
@@ -636,6 +634,14 @@ textarea {
 .home-banner li {
   display: inline-block;
   margin-right: 24px;
+  max-width: 44%;
+}
+@media screen and (max-width: 640px) {
+  .home-banner li {
+    margin-bottom: 2em;
+    text-align: center;
+    max-width: 100%;
+  }
 }
 
 .entry-header .entry-title {
@@ -683,12 +689,9 @@ textarea {
   margin-right: 8px;
   margin-left: 8px;
   content: '';
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #ffcfae;
-  background-image: -o-linear-gradient(-44deg, rgba(211, 120, 120, 0.5) 0%, rgba(149, 36, 129, 0.5) 50%, rgba(185, 199, 39, 0.5) 100%);
-  background-image: -moz-linear-gradient(-44deg, rgba(211, 120, 120, 0.5) 0%, rgba(149, 36, 129, 0.5) 50%, rgba(185, 199, 39, 0.5) 100%);
-  background-image: -ms-linear-gradient(-44deg, rgba(211, 120, 120, 0.5) 0%, rgba(149, 36, 129, 0.5) 50%, rgba(185, 199, 39, 0.5) 100%);
+  background-image: -webkit-linear-gradient(224deg, rgba(211, 120, 120, 0.5) 0%, rgba(149, 36, 129, 0.5) 50%, rgba(185, 199, 39, 0.5) 100%);
   background-image: linear-gradient(-134deg, rgba(211, 120, 120, 0.5) 0%, rgba(149, 36, 129, 0.5) 50%, rgba(185, 199, 39, 0.5) 100%);
 }
 .entry-content h4 {
@@ -779,6 +782,21 @@ table.contact-form td input {
 }
 table.contact-form textarea {
   min-height: 200px;
+}
+@media screen and (max-width: 640px) {
+  table.contact-form {
+    display: block;
+  }
+  table.contact-form tbody,
+  table.contact-form thead,
+  table.contact-form th, table.contact-form td, table.contact-form tr {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  table.contact-form th, table.contact-form td {
+    padding-left: 1em;
+  }
 }
 
 .blog-archive .hentry {
@@ -878,9 +896,7 @@ table.contact-form textarea {
   text-decoration: none;
   color: #fff;
   background: #7d5031;
-  background-image: -o-linear-gradient(-44deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
-  background-image: -moz-linear-gradient(-44deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
-  background-image: -ms-linear-gradient(-44deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
+  background-image: -webkit-linear-gradient(224deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
   background-image: linear-gradient(-134deg, rgba(211, 120, 120, 0.25) 0%, rgba(149, 36, 129, 0.25) 50%, rgba(185, 199, 39, 0.25) 100%);
 }
 .post-navigation .nav-links a:after,
@@ -918,6 +934,14 @@ table.contact-form textarea {
 }
 .paging-navigation .nav-next {
   float: right;
+}
+@media screen and (max-width: 640px) {
+  .paging-navigation .nav-previous {
+    float: none;
+  }
+  .paging-navigation .nav-next {
+    float: none;
+  }
 }
 
 .menu-content {
@@ -962,6 +986,17 @@ table.contact-form textarea {
 .footer-navigation li {
   display: inline-block;
 }
+@media screen and (max-width: 640px) {
+  .footer-navigation li {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .footer-navigation li a {
+    line-height: 4em;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
 .footer-navigation a {
   color: #454545;
   text-decoration: none;
@@ -973,6 +1008,12 @@ table.contact-form textarea {
 }
 .footer-navigation a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 640px) {
+  .footer-navigation a {
+    display: block;
+    width: 100%;
+  }
 }
 
 .footer-copyright {
