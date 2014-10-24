@@ -495,6 +495,11 @@ table th {
     margin-right: auto;
   }
 }
+.product-info .product-thumbnail img {
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  width: 80%;
+}
 
 /**
   * @name Product-Title
