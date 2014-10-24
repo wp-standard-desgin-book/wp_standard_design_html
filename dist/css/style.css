@@ -1,6 +1,32 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/*------------------------------------*\
+    TABLE OF CONTENTS
+    https://github.com/csswizardry/CSS-Guidelines
+\*------------------------------------*/
+/**
+ * CONTENTS
+ *
+ *  0.0 normarize.css .............. HTML要素のデフォルトスタイルを定義
+ *  1.0 レイアウト ................. サイトのレイアウト
+ *  2.0 ヘッダー ....................サイトのヘッダー
+ *  3.0 メニュー ナビ .............. メニュー一覧ページ : ナビゲーション
+ *  4.0 メニュー一覧 ............... メニュー一覧ページ : コンテンツ
+ *  5.0 サイドバー ................. サイドバー内コンテンツの
+ *  6.0 フッター ................... サイトのフッター
+ *  7.0 フォーム関連 ............... フォーム、ボタン
+ *  8.0 投稿関連 ................... 投稿内コンテンツ
+ *  9.0 コメント ................... コメントフォーム
+ * 10.0 WordPress  ................. WordPress に必要なスタイル定義
+ * 11.0 トップページ  .............. トップページ
+
+ */
+/*------------------------------------*\
+   0. normalize.css
+   - - -
+   各HTML要素のデフォルトスタイルを指定
+   normalize.css v2.1.3 | MIT License | git.io/normalize
+\*------------------------------------*/
 article, aside, details, figcaption,
 figure, footer, header, hgroup,
 main, nav, section, summary {
@@ -25,6 +51,8 @@ template {
   display: none;
 }
 
+/* 0.1 html/body タグ
+   -----------------------------------*/
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -45,6 +73,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* 0.2 リンク
+   -----------------------------------*/
 a {
   background: transparent;
 }
@@ -58,6 +88,8 @@ a:hover {
   outline: 0;
 }
 
+/* 0.3 見出し
+   -----------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -74,6 +106,8 @@ h2 {
   margin: 0.67em 0;
 }
 
+/* 0.4 その他
+   -----------------------------------*/
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -159,14 +193,13 @@ iframe {
   max-width: 100%;
 }
 
-/* ==========================================================================
-	 Tables
-	 ========================================================================== */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* 0.5 セレクト時のスタイル
+   -----------------------------------*/
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -187,39 +220,44 @@ textarea {
   resize: vertical;
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* 0.6 テキスト : 中央寄り
+   -----------------------------------*/
 .text-center {
   text-align: center;
 }
 
+/* 0.7 テキスト : 左寄り
+   -----------------------------------*/
 .text-left {
   text-align: left;
 }
 
+/* 0.8 テキスト : 右寄り
+   -----------------------------------*/
 .text-right {
   text-align: right;
 }
 
+/* 0.9 左へフロート
+   -----------------------------------*/
 .f-left {
   float: left;
 }
 
+/* 0.10 右へフロート
+   -----------------------------------*/
 .f-right {
   float: right;
 }
 
+/* 0.11 クリアフィックス
+   -----------------------------------*/
 .clearfix:before, .container:before, .header:before,
 .clearfix:after,
 .container:after,
@@ -232,6 +270,8 @@ ul {
   clear: both;
 }
 
+/* 0.12 画像リンクのアニメーション
+   -----------------------------------*/
 a img {
   -webkit-transition: opacity ease-in .2s;
   transition: opacity ease-in .2s;
@@ -240,6 +280,8 @@ a img:hover {
   opacity: 0.7;
 }
 
+/* 0.13 テーブル
+   -----------------------------------*/
 table {
   width: 100%;
   border-collapse: collapse;
@@ -253,6 +295,11 @@ table th {
   padding-left: 1em;
 }
 
+/*------------------------------------*\
+    1.0 レイアウト
+\*------------------------------------*/
+/* 1.1 コンテナー
+   -----------------------------------*/
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -268,10 +315,19 @@ table th {
   }
 }
 
+.row {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* 1.2 ツーカラム時のスタイル
+   -----------------------------------*/
 .l-two-column {
   padding-bottom: 120px;
 }
 
+/* 1.3 メインカラム
+   -----------------------------------*/
 .l-main {
   max-width: 72.6%;
   width: 100%;
@@ -287,6 +343,8 @@ table th {
   }
 }
 
+/* 1.4 サイドカラム
+   -----------------------------------*/
 .l-sidebar {
   max-width: 25%;
   width: 100%;
@@ -303,12 +361,17 @@ table th {
   }
 }
 
+/* 1.5 ワンカラム時の設定
+   -----------------------------------*/
 .l-one-column {
   background: #FCFCFC;
   padding-top: 4em;
   padding-bottom: 4em;
 }
 
+/*------------------------------------*\
+    2.0 ヘッダー
+\*------------------------------------*/
 .header {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -328,6 +391,9 @@ table th {
   }
 }
 
+/*------------------------------------*\
+    2.1 グローバルナビゲーション
+\*------------------------------------*/
 .header-navigation {
   float: right;
   position: relative;
@@ -426,6 +492,12 @@ table th {
   width: inherit;
 }
 
+/*------------------------------------*\
+  3.0 メニュー ナビゲーション
+  - - -
+  メニューアーカイブのカテゴリー
+  ナビゲーションのスタイル
+\*------------------------------------*/
 .menu-navs {
   margin-bottom: 24px;
 }
@@ -460,24 +532,12 @@ table th {
   }
 }
 
-/**
-  * @name Row
-  * @description Style for the row class
-  * @markup
-  *   <div class="row">markup</div>
-  */
-.row {
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
-/**
-  * @name Product-Info
-  * @description Style for the product-info class
-  * @markup
-  *   <div class="product-info">markup</div>
-  */
-.product-info {
+/*------------------------------------*\
+  4.0 メニュー一覧
+  - - -
+	メニュー一覧ページのスタイル指定
+\*------------------------------------*/
+.menu-block {
   text-align: center;
   width: 46.8%;
   float: left;
@@ -486,31 +546,40 @@ table th {
   margin-right: 12px;
   margin-bottom: 24px;
   padding: 16px;
+  /* 4.1 サムネイル画像
+    -----------------------------------*/
 }
 @media screen and (max-width: 640px) {
-  .product-info {
+  .menu-block {
     width: 100%;
     float: none;
     margin-left: auto;
     margin-right: auto;
   }
 }
-.product-info .product-thumbnail img {
+.menu-block .menu-thumbnail {
   border: 1px solid #e8e8e8;
   border-radius: 50%;
-  width: 80%;
+  width: 70%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.6em;
 }
 
-/**
-  * @name Product-Title
-  * @description Style for the product-title class
-  * @markup
-  *   <div class="product-title">markup</div>
-  */
-.product-title {
+/* 4.2 メニュー名
+ -------------------------------------*/
+.menu-title {
   font-size: 18px;
 }
 
+/*------------------------------------*\
+  5.0 サイドバー
+  - - -
+  サイドバーのスタイル指定
+\*------------------------------------*/
+/* 5.1 ウィジェットタイトル
+   -----------------------------------*/
 .widget-title {
   font-size: 18px;
   font-weight: normal;
@@ -522,10 +591,14 @@ table th {
   background-position: bottom;
 }
 
+/* 5.2 ウィジェット
+   -----------------------------------*/
 .widget {
   margin-bottom: 24px;
 }
 
+/* 5.2 カテゴリ一覧ウィジェット
+   -----------------------------------*/
 .widget_category ul {
   border: 1px solid #e8e8e8;
   border-bottom: none;
@@ -559,9 +632,77 @@ table th {
   }
 }
 
-/**
- * overwrite input style
- */
+/*------------------------------------*\
+  6.0 フッター
+  - - -
+  フッターのスタイル指定
+\*------------------------------------*/
+.footer {
+  background: #F6F6F6;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* 6.1 フッターロゴ
+   -----------------------------------*/
+.footer-logo {
+  margin-bottom: 2em;
+}
+.footer-logo p {
+  font-size: 10px;
+  color: #A5A5A5;
+}
+
+/* 6.2 フッターナビゲーション
+   -----------------------------------*/
+.footer-navigation {
+  margin-bottom: 2em;
+}
+.footer-navigation li {
+  display: inline-block;
+}
+@media screen and (max-width: 640px) {
+  .footer-navigation li {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .footer-navigation li a {
+    line-height: 4em;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+.footer-navigation a {
+  color: #454545;
+  text-decoration: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-image: url(/images/arrow-small.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 640px) {
+  .footer-navigation a {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* 6.3 フッターコピーライト
+   -----------------------------------*/
+.footer-copyright {
+  color: #AAAAAA;
+}
+
+/*------------------------------------*\
+	7.0 フォーム関連
+	- - -
+	フォーム関連のスタイル指定
+\*------------------------------------*/
 input[type=text],
 input[type=search],
 input[type=email],
@@ -573,6 +714,8 @@ textarea {
   vertical-align: middle;
 }
 
+/* 7.1 検索フォーム
+	 -----------------------------------*/
 .form-control input[type=search] {
   width: 180px;
   margin-right: -5px;
@@ -594,6 +737,8 @@ textarea {
   border-radius: 0 5px 5px 0;
 }
 
+/* 7.2 ボタン
+	 -----------------------------------*/
 .btn {
   display: inline-block;
   border: 1px solid #e8e8e8;
@@ -612,43 +757,13 @@ textarea {
   text-align: center;
 }
 
-.visual .container {
-  position: relative;
-}
-.visual .site-desctiption {
-  position: absolute;
-  right: 0px;
-  bottom: 100px;
-  color: #FFF;
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
-  line-height: 2em;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-weight: normal;
-  font-size: 20px;
-}
-@media screen and (max-width: 640px) {
-  .visual .site-desctiption {
-    font-size: 14px;
-    position: static;
-    float: right;
-  }
-}
-
-.home-banner li {
-  display: inline-block;
-  margin-right: 24px;
-  max-width: 44%;
-}
-@media screen and (max-width: 640px) {
-  .home-banner li {
-    margin-bottom: 2em;
-    text-align: center;
-    max-width: 100%;
-  }
-}
-
+/*------------------------------------*\
+  8.0 投稿関連
+  - - -
+  投稿コンテンツ内のスタイル指定
+\*------------------------------------*/
+/* 8.1 投稿タイトル
+   -----------------------------------*/
 .entry-header .entry-title {
   font-size: 24px;
   margin-top: 0;
@@ -660,6 +775,20 @@ textarea {
   background-position: left bottom;
 }
 
+/* 8.2 見出しh1
+   -----------------------------------*/
+.entry-content {
+  /* 8.3 見出しh2
+     -----------------------------------*/
+  /* 8.4 見出しh3
+     -----------------------------------*/
+  /* 8.5 見出しh4
+     -----------------------------------*/
+  /* 8.6 見出しh5
+     -----------------------------------*/
+  /* 8.7 見出しh6
+     -----------------------------------*/
+}
 .entry-content h1 {
   font-size: 24px;
   margin-top: 0;
@@ -719,6 +848,18 @@ textarea {
   font-weight: 100;
 }
 
+/* 8.7 段落
+   -----------------------------------*/
+.entry-content {
+  /* 8.8 定義リスト
+     -----------------------------------*/
+  /* 8.9 小さいテキスト
+     -----------------------------------*/
+  /* 8.10 強調テキスト
+     -----------------------------------*/
+  /* 8.11 コードプレビュー
+     -----------------------------------*/
+}
 .entry-content p {
   line-height: 2em;
   margin-top: 0;
@@ -750,6 +891,8 @@ textarea {
   background: #e8e8e8;
 }
 
+/* 8.12 テーブル
+   -----------------------------------*/
 .entry-content table th,
 .entry-content table td {
   line-height: 2em;
@@ -762,6 +905,8 @@ textarea {
   background: #f7f7f7;
 }
 
+/* 8.13 お問い合わせフォーム
+   -----------------------------------*/
 table.contact-form {
   margin-bottom: 2em;
   border: 1px solid #e8e8e8;
@@ -804,10 +949,18 @@ table.contact-form textarea {
   }
 }
 
+/* 8.14 ブログ一覧ページ
+   -----------------------------------*/
 .blog-archive .hentry {
   margin-bottom: 24px;
   padding: 24px;
   border: 1px solid #e8e8e8;
+}
+.blog-archive .entry-content {
+  /* 8.14 ブログ一覧 タイトル
+     -----------------------------------*/
+  /* 8.15 ブログ一覧 サムネイル画像
+     -----------------------------------*/
 }
 .blog-archive .entry-content .entry-title {
   font-size: 16px;
@@ -836,6 +989,8 @@ table.contact-form textarea {
   margin-right: 16px;
 }
 
+/* 8.16 投稿メタ情報
+   -----------------------------------*/
 .entry-meta {
   margin-bottom: 24px;
   text-align: right;
@@ -878,6 +1033,8 @@ table.contact-form textarea {
   }
 }
 
+/* 8.17 投稿ナビゲーション、一覧ページネーション
+   -----------------------------------*/
 .post-navigation,
 .paging-navigation {
   font-size: 14px;
@@ -949,6 +1106,8 @@ table.contact-form textarea {
   }
 }
 
+/* 8.18 メニュー詳細 コンテンツ
+   -----------------------------------*/
 .menu-content {
   overflow: hidden;
 }
@@ -970,68 +1129,23 @@ table.contact-form textarea {
   margin-bottom: 48px;
 }
 
-.footer {
-  background: #F6F6F6;
-  border-top: 1px solid #e8e8e8;
-  padding-top: 2em;
-  padding-bottom: 2em;
+/*------------------------------------*\
+  9.0 コメントフォーム
+  - - -
+  コメントフォームのスタイル定義
+\*------------------------------------*/
+/* 9.1 コメントフォーム タイトル
+   -----------------------------------*/
+#reply-title {
+  margin-top: 0;
+  background: none;
 }
 
-.footer-logo {
-  margin-bottom: 2em;
-}
-.footer-logo p {
-  font-size: 10px;
-  color: #A5A5A5;
-}
-
-.footer-navigation {
-  margin-bottom: 2em;
-}
-.footer-navigation li {
-  display: inline-block;
-}
-@media screen and (max-width: 640px) {
-  .footer-navigation li {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-  .footer-navigation li a {
-    line-height: 4em;
-    border-bottom: 1px solid #e8e8e8;
-  }
-}
-.footer-navigation a {
-  color: #454545;
-  text-decoration: none;
-  padding-left: 16px;
-  padding-right: 16px;
-  background-image: url(/images/arrow-small.png);
-  background-repeat: no-repeat;
-  background-position: 5px center;
-}
-.footer-navigation a:hover {
-  text-decoration: underline;
-}
-@media screen and (max-width: 640px) {
-  .footer-navigation a {
-    display: block;
-    width: 100%;
-  }
-}
-
-.footer-copyright {
-  color: #AAAAAA;
-}
-
+/* 9.2 コメントフォーム フォーム関連
+   -----------------------------------*/
 #comments {
   padding: 16px;
   border: 1px solid #e8e8e8;
-}
-#comments #reply-title {
-  margin-top: 0;
-  background: none;
 }
 #comments input[type=text],
 #comments input[type=url],
@@ -1058,6 +1172,9 @@ table.contact-form textarea {
   }
 }
 
+/*------------------------------------*\
+  10.0 WordPress 独自スタイル
+\*------------------------------------*/
 .alignnone {
   margin: 5px 20px 20px 0;
 }
@@ -1143,4 +1260,48 @@ a img.aligncenter {
 
 .screen-reader-text {
   display: none;
+}
+
+/*------------------------------------*\
+  11.0 トップページ
+\*------------------------------------*/
+/* 11.1 メインビジュアル
+   -----------------------------------*/
+.visual .container {
+  position: relative;
+}
+.visual .site-desctiption {
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+  color: #FFF;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 2em;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: normal;
+  font-size: 20px;
+}
+@media screen and (max-width: 640px) {
+  .visual .site-desctiption {
+    font-size: 14px;
+    position: static;
+    float: right;
+  }
+}
+
+/* 11.2 トップページ/バナー
+   -----------------------------------*/
+.home-banner li {
+  display: inline-block;
+  margin-right: 24px;
+  max-width: 44%;
+}
+@media screen and (max-width: 640px) {
+  .home-banner li {
+    margin-bottom: 2em;
+    text-align: center;
+    max-width: 100%;
+  }
 }

@@ -25,6 +25,14 @@
 //
 // Styleguide 6.1
 
+/*------------------------------------*\
+  8.0 投稿関連
+  - - -
+  投稿コンテンツ内のスタイル指定
+\*------------------------------------*/
+
+/* 8.1 投稿タイトル
+   -----------------------------------*/
 .entry-header {
     .entry-title {
         font-size: 24px;
@@ -41,6 +49,9 @@
     }
 }
 
+
+/* 8.2 見出しh1
+   -----------------------------------*/
 .entry-content {
     h1 {
         font-size: 24px;
@@ -55,6 +66,8 @@
         background-repeat: no-repeat;
         background-position: left bottom;
     }
+/* 8.3 見出しh2
+   -----------------------------------*/
     h2 {
         font-size: 20px;
         line-height: 1.5em;
@@ -66,6 +79,9 @@
         color: $base-font-color;
         border-bottom: 1px solid $gray;
     }
+
+/* 8.4 見出しh3
+   -----------------------------------*/
     h3 {
         font-size: 18px;
         line-height: 27px;
@@ -95,6 +111,8 @@
             background-image:      linear-gradient(-134deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
         }
     }
+/* 8.5 見出しh4
+   -----------------------------------*/
     h4 {
         font-size: 16px;
 
@@ -109,10 +127,14 @@
             content: '・';
         }
     }
+/* 8.6 見出しh5
+   -----------------------------------*/
     h5 {
         font-size: 14px;
         font-weight: 700;
     }
+/* 8.7 見出しh6
+   -----------------------------------*/
     h6 {
         font-size: 14px;
         font-weight: 100;
@@ -155,13 +177,19 @@
 //
 // Styleguide 6.2
 
+/* 8.7 段落
+   -----------------------------------*/
 .entry-content {
+
     p {
         line-height: 2em;
 
         margin-top: 0;
         margin-bottom: 8px;
     }
+
+/* 8.8 定義リスト
+   -----------------------------------*/
     dl {
         dt {
             display: inline-block;
@@ -175,14 +203,20 @@
             margin-left: 1.14297em;
         }
     }
+/* 8.9 小さいテキスト
+   -----------------------------------*/
     small {
         font-size: 0.8em;
     }
+/* 8.10 強調テキスト
+   -----------------------------------*/
     strong {
         font-weight: bold;
 
         color: #905643;
     }
+/* 8.11 コードプレビュー
+   -----------------------------------*/
     pre {
         padding: 16px;
 
@@ -236,6 +270,9 @@
 // </div>
 //
 // Styleguide 6.3
+
+/* 8.12 テーブル
+   -----------------------------------*/
 .entry-content {
     table {
         th,
@@ -302,6 +339,9 @@
 // </table>
 //
 // Styleguide 6.4
+
+/* 8.13 お問い合わせフォーム
+   -----------------------------------*/
 table.contact-form {
     margin-bottom: 2em;
 
@@ -346,7 +386,8 @@ table.contact-form {
 }
 
 
-// ブログアーカイブ
+/* 8.14 ブログ一覧ページ
+   -----------------------------------*/
 .blog-archive {
     .hentry {
         margin-bottom: 24px;
@@ -355,6 +396,9 @@ table.contact-form {
         border: $base-border;
     }
     .entry-content {
+
+/* 8.14 ブログ一覧 タイトル
+   -----------------------------------*/
         .entry-title {
             font-size: 16px;
 
@@ -383,6 +427,9 @@ table.contact-form {
 
             width: 100%;
         }
+
+/* 8.15 ブログ一覧 サムネイル画像
+   -----------------------------------*/
         .thumbnail {
             float: left;
 
@@ -410,6 +457,9 @@ table.contact-form {
 // </div>
 //
 // Styleguide 6.5
+
+/* 8.16 投稿メタ情報
+   -----------------------------------*/
 .entry-meta {
     margin-bottom: 24px;
 
@@ -469,6 +519,9 @@ table.contact-form {
 // </nav>
 //
 // Styleguide 6.6
+
+/* 8.17 投稿ナビゲーション、一覧ページネーション
+   -----------------------------------*/
 .post-navigation,
 .paging-navigation {
     font-size: $base-font-size;
@@ -551,7 +604,8 @@ table.contact-form {
     }
 }
 
-// メニューコンテンツ
+/* 8.18 メニュー詳細 コンテンツ
+   -----------------------------------*/
 .menu-content {
     overflow: hidden;
     .menu-thumbnail {

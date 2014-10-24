@@ -46,14 +46,25 @@
 // </div>
 //
 // Styleguide 6.7
+
+/*------------------------------------*\
+  9.0 コメントフォーム
+  - - -
+  コメントフォームのスタイル定義
+\*------------------------------------*/
+
+/* 9.1 コメントフォーム タイトル
+   -----------------------------------*/
+#reply-title{
+	margin-top: 0;
+	background: none;
+}
+
+/* 9.2 コメントフォーム フォーム関連
+   -----------------------------------*/
 #comments{
 	padding: 16px;
 	border: 1px solid $gray;
-
-	#reply-title{
-		margin-top: 0;
-		background: none;
-	}
 
 	input[type=text],
 	input[type=url],

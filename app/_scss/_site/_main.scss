@@ -1,21 +1,9 @@
-/**
-  * @name Row
-  * @description Style for the row class
-  * @markup
-  *   <div class="row">markup</div>
-  */
-.row{
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
-/**
-  * @name Product-Info
-  * @description Style for the product-info class
-  * @markup
-  *   <div class="product-info">markup</div>
-  */
-.product-info{
+/*------------------------------------*\
+  4.0 メニュー一覧
+  - - -
+	メニュー一覧ページのスタイル指定
+\*------------------------------------*/
+.menu-block{
   text-align: center;
   width: 46.8%;
   float: left;
@@ -31,21 +19,22 @@
     margin-left: auto;
     margin-right: auto;
   }
-	.product-thumbnail{
-		img{
-			border: 1px solid #e8e8e8;
-			border-radius: 50%;
-			width: 80%;
-		}
+
+ /* 4.1 サムネイル画像
+   -----------------------------------*/
+	.menu-thumbnail{
+		border: 1px solid #e8e8e8;
+		border-radius: 50%;
+		width: 70%;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 1.6em;
 	}
 }
 
-/**
-  * @name Product-Title
-  * @description Style for the product-title class
-  * @markup
-  *   <div class="product-title">markup</div>
-  */
-.product-title{
+/* 4.2 メニュー名
+ -------------------------------------*/
+.menu-title{
   font-size: 18px;
 }
