@@ -71,6 +71,7 @@
 	li{
 		display: inline-block;
 		position: relative;
+		vertical-align: top;
     &:hover {
         background-color: $gray-light;
     }
@@ -118,7 +119,13 @@
 		height: 1px;
 		width: 1px;
 		clip: rect(1px, 1px, 1px, 1px);
-
+	  @media screen and(max-width: 640px){
+			position: static;
+			clip: inherit;
+			overflow: hidden;
+			height: inherit;
+			width: inherit;
+	  }
 		li{
 			text-align: left;
 			display: block;

@@ -76,8 +76,18 @@
   margin-bottom: 2em;
   li{
     display: inline-block;
+	  @media screen and(max-width: 640px){
+	    display: block;
+	    width: 100%;
+	    text-align: left;
+	    a{
+	    	line-height: 4em;
+	    	border-bottom: 1px solid #e8e8e8;
+	    }
+	  }
   }
   a{
+
     color: $base-font-color;
     text-decoration: none;
     padding-left: 16px;
@@ -88,6 +98,10 @@
     &:hover{
       text-decoration: underline;
     }
+	  @media screen and(max-width: 640px){
+	    display: block;
+	    width: 100%;
+	  }
   }
 }
 

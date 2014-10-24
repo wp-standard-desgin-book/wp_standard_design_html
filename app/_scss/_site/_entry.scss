@@ -330,6 +330,19 @@ table.contact-form {
     textarea {
         min-height: 200px;
     }
+		@media screen and(max-width: 640px) {
+	    display: block;
+	    tbody,
+	    thead,
+	    th,td,tr{
+		    display: block;
+		    width: 100%;
+		    text-align: left;
+	    }
+	    th,td{
+		    padding-left: 1em;
+	    }
+		}
 }
 
 
@@ -528,6 +541,14 @@ table.contact-form {
     .nav-next {
         float: right;
     }
+		@media screen and(max-width: 640px) {
+	    .nav-previous {
+	        float: none;
+	    }
+	    .nav-next {
+	        float: none;
+	    }
+		}
 }
 
 .menu-content {
