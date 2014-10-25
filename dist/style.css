@@ -368,6 +368,10 @@ table th {
   padding-top: 4em;
   padding-bottom: 4em;
 }
+.l-one-column .l-main {
+  width: 100%;
+  max-width: 100%;
+}
 
 /*------------------------------------*\
     2.0 ヘッダー
@@ -539,7 +543,7 @@ table th {
 \*------------------------------------*/
 .menu-block {
   text-align: center;
-  width: 46.8%;
+  width: 46.6%;
   float: left;
   border: 1px solid #e8e8e8;
   margin-left: 12px;
@@ -549,7 +553,7 @@ table th {
   /* 4.1 サムネイル画像
     -----------------------------------*/
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 940px) {
   .menu-block {
     width: 100%;
     float: none;
@@ -869,6 +873,7 @@ textarea {
   display: inline-block;
   margin-bottom: 1.14297em;
   border-bottom: 1px dashed #e8e8e8;
+  font-weight: bold;
 }
 .entry-content dl dd {
   margin-bottom: 1.14297em;
@@ -1293,10 +1298,14 @@ a img.aligncenter {
 
 /* 11.2 トップページ/バナー
    -----------------------------------*/
+.home-banner {
+  overflow: hidden;
+}
 .home-banner li {
-  display: inline-block;
-  margin-right: 24px;
-  max-width: 44%;
+  display: block;
+  float: left;
+  margin-right: 16px;
+  max-width: 31.5%;
 }
 @media screen and (max-width: 640px) {
   .home-banner li {
