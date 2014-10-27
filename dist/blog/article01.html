@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 
 	<head>
 		<meta charset="utf-8">
@@ -9,7 +9,7 @@
 		<meta name="keywords" content="大曽根,カフェ,名古屋,老舗,コーヒーショップ">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="../style.css" />
 
 	</head>
 
@@ -22,8 +22,8 @@
 
 				<!-- ロゴ -->
 				<div class="header-logo">
-					<a href="/">
-						<img src="/images/logo.png" alt="OzoneCafe">
+					<a href="../">
+						<img src="../images/logo.png" alt="OzoneCafe">
 					</a>
 					<!-- /ロゴ -->
 				</div>
@@ -34,31 +34,36 @@
 					<ul class="nav-menu">
 
 						<li class="menu-item">
-							<a href="/" title="HOME">HOME</a>
+							<a href="../index.html" title="HOME">HOME</a>
 						</li>
 
-						<li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
-							<a href="/shop/">SHOP</a>
+						<li class="menu-item">
+							<a href="../shop/index.html">SHOP</a>
 							<ul class="sub-menu">
-								<li class="menu-item menu-item-home menu-item-2078">
-									<a href="/shop/taste.html">こだわり</a>
+								<li class="menu-item">
+									<a href="../shop/taste.html">こだわり</a>
 								</li>
-								<li class="menu-item menu-item-home menu-item-2079">
-									<a href="/shop/history.html">歴史</a>
+								<li class="menu-item">
+									<a href="../shop/history.html">歴史</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="menu-item">
-							<a href="/menus/" title="MENUS">MENUS</a>
+							<a href="../menus/index.html" title="MENUS">MENUS</a>
 						</li>
 
 						<li class="menu-item">
-							<a href="/recruit/index.html" title="RECRUIT">RECRUIT</a>
+							<a href="../recruit/index.html" title="RECRUIT">RECRUIT</a>
+							<ul class="sub-menu">
+								<li class="menu-item">
+									<a href="../recruit/form.html">応募フォーム</a>
+								</li>
+							</ul>
 						</li>
 
 						<li class="menu-item">
-							<a href="/blog/" title="BLOG">BLOG</a>
+							<a href="../blog/index.html" title="BLOG">BLOG</a>
 						</li>
 
 					</ul>
@@ -97,11 +102,11 @@
 										</span>
 
 										<span class="date">
-											<time class="entry-date" datetime="2014-09-22T04:29:32+00:00">2014年9月22日</time>
+											<time class="entry-date">2014年9月22日</time>
 										</span>
 
 										<span class="categories-links info">
-											<a href="http://test.wordpress.com/?cat=1" rel="category">新着情報</a>
+											<a href="#" rel="category">新着情報</a>
 										</span>
 
 									</div>
@@ -110,11 +115,10 @@
 										<br> WordCafe 最新情報、お役立ち情報を随時掲載していきます。</p>
 
 									<nav class="navigation post-navigation" role="navigation">
-										<h1 class="screen-reader-text">投稿ナビゲーション</h1>
 										<div class="nav-links">
-											<a href="/" rel="prev">
+											<a href="../" rel="prev">
 												<span class="meta-nav">←</span> 前の記事へ</a>
-											<a href="/" rel="next">次の記事へ
+											<a href="../" rel="next">次の記事へ
 												<span class="meta-nav">→</span>
 											</a>
 										</div>
@@ -126,7 +130,7 @@
 										<div id="respond" class="comment-respond">
 											<h3 id="reply-title" class="comment-reply-title">コメントを残す
 												<small>
-													<a rel="nofollow" id="cancel-comment-reply-link" href="/?p=1#respond" style="display:none;">コメントをキャンセル</a>
+													<a rel="nofollow" id="cancel-comment-reply-link" href="../?p=1#respond" style="display:none;">コメントをキャンセル</a>
 												</small>
 											</h3>
 											<form action="?" method="post" id="commentform" class="comment-form" novalidate="">
@@ -144,22 +148,20 @@
 													</label>
 													<input id="email" name="email" type="email" value="" size="30" aria-required="true">
 												</p>
-												<p class="comment-form-url">
+												<p>
 													<label for="url">ウェブサイト</label>
 													<input id="url" name="url" type="url" value="" size="30">
 												</p>
-												<p class="comment-form-comment">
+												<p>
 													<label for="comment">コメント</label>
 													<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 												</p>
-												<p class="form-allowed-tags">次の
+												<p>次の
 													<abbr title="HyperText Markup Language">HTML</abbr>タグと属性が使えます:
 													<code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt;</code>
 												</p>
 												<p class="form-submit">
 													<input name="submit" type="submit" id="submit" value="コメントを送信">
-													<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
-													<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 												</p>
 											</form>
 										</div>
@@ -196,20 +198,20 @@
 					<div class="banner">
 
 						<p>
-							<a href="/contact.html">
-								<img src="/images/banner-contact.png" alt="お問い合わせ">
+							<a href="../contact.html">
+								<img src="../images/banner-contact.png" alt="お問い合わせ">
 							</a>
 						</p>
 
 						<p>
-							<a href="/shop/">
-								<img src="/images/banner-access.png" alt="アクセス">
+							<a href="../shop/">
+								<img src="../images/banner-access.png" alt="アクセス">
 							</a>
 						</p>
 
 						<p>
-							<a href="/blog/">
-								<img src="/images/banner-blog.png" alt="ブログ">
+							<a href="../blog/">
+								<img src="../images/banner-blog.png" alt="ブログ">
 							</a>
 						</p>
 
@@ -224,16 +226,16 @@
 
 						<ul>
 							<li>
-								<a href="/">アイスドリンク</a>
+								<a href="../">アイスドリンク</a>
 							</li>
 							<li>
-								<a href="/">ホットドリンク</a>
+								<a href="../">ホットドリンク</a>
 							</li>
 							<li>
-								<a href="/">フード</a>
+								<a href="../">フード</a>
 							</li>
 							<li>
-								<a href="/">スイーツ</a>
+								<a href="../">スイーツ</a>
 							</li>
 						</ul>
 
@@ -253,8 +255,8 @@
 			<div class="container">
 
 				<div class="footer-logo">
-					<a href="/">
-						<img src="/images/footer-logo.png" alt="OzoneCafe">
+					<a href="../">
+						<img src="../images/footer-logo.png" alt="OzoneCafe">
 					</a>
 					<p>"一杯"に込める思い。OzoneCafe</p>
 				</div>
@@ -262,37 +264,37 @@
 				<div class="footer-navigation">
 					<ul>
 						<li>
-							<a href="/">
+							<a href="../">
 								トップページ
 							</a>
 						</li>
 						<li>
-							<a href="/shop/">
+							<a href="../shop/index.html">
 								店舗案内
 							</a>
 						</li>
 						<li>
-							<a href="/menus/">
+							<a href="../menus/index.html">
 								メニュー
 							</a>
 						</li>
 						<li>
-							<a href="/contact.html">
-								お問い合わせ
-							</a>
-						</li>
-						<li>
-							<a href="/blog/">
+							<a href="../blog/index.html">
 								ブログ
 							</a>
 						</li>
 						<li>
-							<a href="/privacy-policy.html">
-								プライバシーポリシー
+							<a href="../recruit/index.html">
+								スタッフ募集
 							</a>
 						</li>
 						<li>
-							<a href="/sitemap.html">
+							<a href="../recruit/form.html">
+								求人応募
+							</a>
+						</li>
+						<li>
+							<a href="../sitemap.html">
 								サイトマップ
 							</a>
 						</li>
@@ -300,7 +302,7 @@
 					</ul>
 				</div>
 
-				<div class="footer-copyright text-center">
+				<div class="footer-copyright">
 					<p>copyright © 2014 Ozone Cafe All Right Reserved.</p>
 				</div>
 
@@ -309,8 +311,6 @@
 		</footer>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-		<script src="/js/script.js"></script>
 
 	</body>
 

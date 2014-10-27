@@ -21,11 +21,11 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			compass: {
-				files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
+				files: ['<%= yeoman.app %>/**/*.{scss,sass}'],
 				tasks: ['compass:server', 'autoprefixer:server']
 			},
 			autoprefixer: {
-				files: ['<%= yeoman.app %>/css/**/*.css'],
+				files: ['<%= yeoman.app %>/**/*.css'],
 				tasks: ['copy:stageCss','autoprefixer:server']
 			},
 			jekyll: {
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
 				},
 				files: [
 					'.jekyll/**/*.html',
-					'.tmp/css/**/*.css',
+					'.tmp/**/*.css',
 					'{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
 					'<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'
 				]
@@ -109,8 +109,8 @@ module.exports = function (grunt) {
 				// If you're using global Sass gems, require them here.
 				// require: ['singularity', 'jacket'],
 				bundleExec: true,
-				sassDir: '<%= yeoman.app %>/_scss',
-				cssDir: '.tmp/css',
+				sassDir: '<%= yeoman.app %>/',
+				cssDir: '.tmp',
 				imagesDir: '<%= yeoman.app %>/images',
 				javascriptsDir: '<%= yeoman.app %>/js',
 				relativeAssets: false,
@@ -139,17 +139,17 @@ module.exports = function (grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '.tmp/css',
-					src: '**/*.css',
-					dest: '<%= yeoman.dist %>/css'
+					cwd: '.tmp',
+					src: '*.css',
+					dest: '<%= yeoman.dist %>'
 				}]
 			},
 			server: {
 				files: [{
 					expand: true,
-					cwd: '.tmp/css',
-					src: '**/*.css',
-					dest: '.tmp/css'
+					cwd: '.tmp',
+					src: '*.css',
+					dest: '.tmp'
 				}]
 			}
 		},
@@ -187,7 +187,7 @@ module.exports = function (grunt) {
 				assetsDirs: '<%= yeoman.dist %>',
 			},
 			html: ['<%= yeoman.dist %>/**/*.html'],
-			css: ['<%= yeoman.dist %>/css/**/*.css']
+			css: ['<%= yeoman.dist %>/**/*.css']
 		},
 		htmlmin: {
 			dist: {
@@ -247,14 +247,9 @@ module.exports = function (grunt) {
 					dot: true,
 					cwd: '<%= yeoman.app %>',
 					src: [
-						// Jekyll processes and moves HTML and text files.
-						// Usemin moves CSS and javascript inside of Usemin blocks.
-						// Copy moves asset files and directories.
 						'images/**/*',
 						'fonts/**/*',
-						// Like Jekyll, exclude files & folders prefixed with an underscore.
 						'!**/_*{,/**}',
-						// Explicitly add any files your site needs for distribution here.
 						'_bower_components/jquery/jquery.js',
 						'favicon.ico',
 						'apple-touch*.png'
@@ -266,9 +261,9 @@ module.exports = function (grunt) {
 				files: [{
 					expand: true,
 					dot: true,
-					cwd: '.tmp/css',
+					cwd: '.tmp',
 					src: [
-						'**/*.css'
+						'*.css'
 					],
 					dest: '<%= yeoman.dist %>'
 				}]
@@ -278,9 +273,9 @@ module.exports = function (grunt) {
 				files: [{
 					expand: true,
 					dot: true,
-					cwd: '<%= yeoman.app %>/css',
-					src: '**/*.css',
-					dest: '.tmp/css'
+					cwd: '<%= yeoman.app %>',
+					src: '*.css',
+					dest: '.tmp'
 				}]
 			},
 			styleGuideImage: {
@@ -301,7 +296,7 @@ module.exports = function (grunt) {
 				files: [{
 					src: [
 						'<%= yeoman.dist %>/js/**/*.js',
-						'<%= yeoman.dist %>/css/**/*.css',
+						'<%= yeoman.dist %>/**/*.css',
 						'<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
 						'<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
 					]
@@ -323,7 +318,7 @@ module.exports = function (grunt) {
 			options: {
 				template: 'template',
 				includeType: 'css',
-				includePath: 'dist/css/style.css'
+				includePath: 'dist/style.css'
 			},
 			dist:{
 				files:{
@@ -337,7 +332,7 @@ module.exports = function (grunt) {
 			},
 			check: {
 				src: [
-					'<%= yeoman.app %>/css/**/*.css',
+					'<%= yeoman.app %>/**/*.css',
 					'<%= yeoman.app %>/_scss/**/*.scss'
 				]
 			}
@@ -359,7 +354,7 @@ module.exports = function (grunt) {
 						bsFiles: {
 								src : [
 									'.jekyll/**/*.html',
-									'.tmp/css/**/*.css'
+									'.tmp/**/*.css'
 								]
 						},
 						options: {
@@ -403,8 +398,8 @@ module.exports = function (grunt) {
 		},
 		replace: {
 		  dist: {
-		    src: ['dist/menus/*.html'],
-	      dest: 'dist/menus',
+		    src: ['dist/*.html'],
+	      dest: 'dist/',
 	      replacements: [{
 	        from: '<img src="/images',
 	        to: '<img src="images'
@@ -417,9 +412,92 @@ module.exports = function (grunt) {
 	      }, {
 	        from: 'url(/',
 	        to: 'url('
+	      }, {
+	        from: 'link rel="stylesheet" href="style.css"',
+	        to: 'link rel="stylesheet" href="style.css"'
+	      }]
+	    },
+		  menu: {
+		    src: ['dist/menus/*.html'],
+	      dest: 'dist/menus/',
+	      replacements: [{
+	        from: '<img src="/images',
+	        to: '<img src="../images'
+	      }, {
+	        from: 'href="/',
+	        to: 'href="../'
+	      }, {
+	        from: 'src="/js',
+	        to: 'src="../js'
+	      }, {
+	        from: 'url(/',
+	        to: 'url(../'
+	      }, {
+	        from: 'link rel="stylesheet" href="/style.css"',
+	        to: 'link rel="stylesheet" href="../style.css"'
+	      }]
+	    },
+		  blog: {
+		    src: ['dist/blog/*.html'],
+	      dest: 'dist/blog/',
+	      replacements: [{
+	        from: '<img src="/images',
+	        to: '<img src="../images'
+	      }, {
+	        from: 'href="/',
+	        to: 'href="../'
+	      }, {
+	        from: 'src="/js',
+	        to: 'src="js'
+	      }, {
+	        from: 'url(/',
+	        to: 'url(../'
+	      }, {
+	        from: 'link rel="stylesheet" href="/style.css"',
+	        to: 'link rel="stylesheet" href="../style.css"'
+	      }]
+	    },
+		  shop: {
+		    src: ['dist/shop/*.html'],
+	      dest: 'dist/shop/',
+	      replacements: [{
+	        from: '<img src="/images',
+	        to: '<img src="../images'
+	      }, {
+	        from: 'href="/',
+	        to: 'href="../'
+	      }, {
+	        from: 'src="/js',
+	        to: 'src="js'
+	      }, {
+	        from: 'url(/',
+	        to: 'url(../'
+	      }, {
+	        from: 'link rel="stylesheet" href="/style.css"',
+	        to: 'link rel="stylesheet" href="../style.css"'
+	      }]
+	    },
+		  recruit: {
+		    src: ['dist/recruit/*.html'],
+	      dest: 'dist/recruit/',
+	      replacements: [{
+	        from: '<img src="/images',
+	        to: '<img src="../images'
+	      }, {
+	        from: 'href="/',
+	        to: 'href="../'
+	      }, {
+	        from: 'src="/js',
+	        to: 'src="js'
+	      }, {
+	        from: 'url(/',
+	        to: 'url(../'
+	      }, {
+	        from: 'link rel="stylesheet" href="/style.css"',
+	        to: 'link rel="stylesheet" href="../style.css"'
 	      }]
 	    }
-		}
+		},
 	});
 
 
@@ -437,6 +515,7 @@ module.exports = function (grunt) {
 			'watch',
 			'kss'
 		]);
+
 	});
 
 	grunt.registerTask('server', function () {
@@ -459,12 +538,12 @@ module.exports = function (grunt) {
 		'useminPrepare',
 		'concat',
 		'autoprefixer:dist',
-		'uglify',
+		// 'uglify',
 		// 'imagemin',
 		'usemin',
 		'styleguide',
 		'htmlautofixer',
-		// 'stringreplace'
+		'stringreplace'
 		]);
 
 	grunt.registerTask('htmlautofixer',[
@@ -473,6 +552,8 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('stringreplace',[
 		'replace'
+		// 'menuReplace',
+		// 'shopReplace'
 	]);
 
 	grunt.registerTask('styleguide', [

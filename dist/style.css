@@ -962,6 +962,7 @@ table.contact-form textarea {
   border: 1px solid #e8e8e8;
 }
 .blog-archive .entry-content {
+  overflow: hidden;
   /* 8.14 ブログ一覧 タイトル
      -----------------------------------*/
   /* 8.15 ブログ一覧 サムネイル画像
@@ -991,6 +992,7 @@ table.contact-form textarea {
 }
 .blog-archive .entry-content .thumbnail {
   float: left;
+  max-width: 175px;
   margin-right: 16px;
 }
 
@@ -1126,12 +1128,24 @@ table.contact-form textarea {
 .menu-content .menu-thumbnail img {
   max-width: 100%;
 }
+@media screen and (max-width: 940px) {
+  .menu-content .menu-thumbnail {
+    float: none;
+    width: 100%;
+  }
+}
 .menu-content .menu-detail {
   float: right;
   width: 431px;
 }
 .menu-content .menu-detail p {
   margin-bottom: 48px;
+}
+@media screen and (max-width: 940px) {
+  .menu-content .menu-detail {
+    float: none;
+    width: 100%;
+  }
 }
 
 /*------------------------------------*\

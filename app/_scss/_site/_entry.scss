@@ -398,7 +398,7 @@ table.contact-form {
         border: $base-border;
     }
     .entry-content {
-
+				overflow: hidden;
 /* 8.14 ブログ一覧 タイトル
    -----------------------------------*/
         .entry-title {
@@ -424,6 +424,7 @@ table.contact-form {
             }
 
         }
+
         .entry-header {
             display: inline-block;
 
@@ -434,7 +435,7 @@ table.contact-form {
    -----------------------------------*/
         .thumbnail {
             float: left;
-
+						max-width: 175px;
             margin-right: 16px;
         }
     }
@@ -621,6 +622,10 @@ table.contact-form {
         img {
             max-width: 100%;
         }
+		    @media screen and(max-width: 940px) {
+		      float: none;
+		      width: 100%;
+		    }
     }
     .menu-detail {
         float: right;
@@ -629,5 +634,9 @@ table.contact-form {
         p {
             margin-bottom: 48px;
         }
+		    @media screen and(max-width: 940px) {
+		      float: none;
+		      width: 100%;
+		    }
     }
 }
