@@ -3,9 +3,6 @@
 /*------------------------------------*\
     TABLE OF CONTENTS
     https://github.com/csswizardry/CSS-Guidelines
-\*------------------------------------*/
-/**
- * CONTENTS
  *
  *  0.0 normarize.css .............. HTML要素のデフォルトスタイルを定義
  *  1.0 レイアウト ................. サイトのレイアウト
@@ -18,7 +15,7 @@
  *  8.0 投稿関連 ................... 投稿内コンテンツ
  *  9.0 コメント ................... コメントフォーム
  * 10.0 WordPress  ................. WordPress に必要なスタイル定義
- * 11.0 トップページ  .............. トップページ
+ * 11.0 トップページ  .............. トップページコンテンツのスタイル
 
  */
 /*------------------------------------*\
@@ -64,7 +61,7 @@ html * {
 
 body {
   margin: 0;
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-family: Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", sans-serif;
   font-size: 14px;
   line-height: 1.7em;
   color: #454545;
@@ -781,18 +778,6 @@ textarea {
 
 /* 8.2 見出しh1
    -----------------------------------*/
-.entry-content {
-  /* 8.3 見出しh2
-     -----------------------------------*/
-  /* 8.4 見出しh3
-     -----------------------------------*/
-  /* 8.5 見出しh4
-     -----------------------------------*/
-  /* 8.6 見出しh5
-     -----------------------------------*/
-  /* 8.7 見出しh6
-     -----------------------------------*/
-}
 .entry-content h1 {
   font-size: 24px;
   margin-top: 0;
@@ -803,6 +788,9 @@ textarea {
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+
+/* 8.3 見出しh2
+   -----------------------------------*/
 .entry-content h2 {
   font-size: 20px;
   line-height: 1.5em;
@@ -812,6 +800,9 @@ textarea {
   color: #454545;
   border-bottom: 1px solid #e8e8e8;
 }
+
+/* 8.4 見出しh3
+   -----------------------------------*/
 .entry-content h3 {
   font-size: 18px;
   line-height: 27px;
@@ -832,6 +823,9 @@ textarea {
   background-image: -webkit-linear-gradient(224deg, rgba(211, 120, 120, 0.5) 0%, rgba(149, 36, 129, 0.5) 50%, rgba(185, 199, 39, 0.5) 100%);
   background-image: linear-gradient(-134deg, rgba(211, 120, 120, 0.5) 0%, rgba(149, 36, 129, 0.5) 50%, rgba(185, 199, 39, 0.5) 100%);
 }
+
+/* 8.5 見出しh4
+   -----------------------------------*/
 .entry-content h4 {
   font-size: 16px;
   margin-top: 8px;
@@ -843,10 +837,16 @@ textarea {
   margin-left: 0;
   content: '・';
 }
+
+/* 8.6 見出しh5
+   -----------------------------------*/
 .entry-content h5 {
   font-size: 14px;
   font-weight: 700;
 }
+
+/* 8.7 見出しh6
+   -----------------------------------*/
 .entry-content h6 {
   font-size: 14px;
   font-weight: 100;
@@ -854,20 +854,15 @@ textarea {
 
 /* 8.7 段落
    -----------------------------------*/
-.entry-content {
-  /* 8.8 定義リスト
-     -----------------------------------*/
-  /* 8.9 小さいテキスト
-     -----------------------------------*/
-  /* 8.10 強調テキスト
-     -----------------------------------*/
-  /* 8.11 コードプレビュー
-     -----------------------------------*/
-}
 .entry-content p {
   line-height: 2em;
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+.entry-content {
+  /* 8.8 定義リスト
+     -----------------------------------*/
 }
 .entry-content dl dt {
   display: inline-block;
@@ -879,13 +874,24 @@ textarea {
   margin-bottom: 1.14297em;
   margin-left: 1.14297em;
 }
+
+.entry-content {
+  /* 8.9 小さいテキスト
+     -----------------------------------*/
+}
 .entry-content small {
   font-size: 0.8em;
 }
+
+/* 8.10 強調テキスト
+   -----------------------------------*/
 .entry-content strong {
   font-weight: bold;
   color: #905643;
 }
+
+/* 8.11 コードプレビュー
+   -----------------------------------*/
 .entry-content pre {
   padding: 16px;
   background: #e8e8e8;

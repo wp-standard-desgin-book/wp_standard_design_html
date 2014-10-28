@@ -66,8 +66,10 @@
         background-repeat: no-repeat;
         background-position: left bottom;
     }
+}
 /* 8.3 見出しh2
    -----------------------------------*/
+.entry-content {
     h2 {
         font-size: 20px;
         line-height: 1.5em;
@@ -79,9 +81,10 @@
         color: $base-font-color;
         border-bottom: 1px solid $gray;
     }
-
+}
 /* 8.4 見出しh3
    -----------------------------------*/
+.entry-content {
     h3 {
         font-size: 18px;
         line-height: 27px;
@@ -111,8 +114,10 @@
             background-image:      linear-gradient(-134deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
         }
     }
+}
 /* 8.5 見出しh4
    -----------------------------------*/
+.entry-content {
     h4 {
         font-size: 16px;
 
@@ -127,14 +132,18 @@
             content: '・';
         }
     }
+}
 /* 8.6 見出しh5
    -----------------------------------*/
+.entry-content {
     h5 {
         font-size: 14px;
         font-weight: 700;
     }
+}
 /* 8.7 見出しh6
    -----------------------------------*/
+.entry-content {
     h6 {
         font-size: 14px;
         font-weight: 100;
@@ -187,6 +196,9 @@
         margin-top: 0;
         margin-bottom: 8px;
     }
+}
+
+.entry-content {
 
 /* 8.8 定義リスト
    -----------------------------------*/
@@ -205,20 +217,26 @@
             margin-left: 1.14297em;
         }
     }
+}
+.entry-content {
 /* 8.9 小さいテキスト
    -----------------------------------*/
     small {
         font-size: 0.8em;
     }
+}
 /* 8.10 強調テキスト
    -----------------------------------*/
+.entry-content {
     strong {
         font-weight: bold;
 
         color: #905643;
     }
+}
 /* 8.11 コードプレビュー
    -----------------------------------*/
+.entry-content {
     pre {
         padding: 16px;
 
