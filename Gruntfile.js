@@ -397,107 +397,117 @@ module.exports = function (grunt) {
 			},
 		},
 		replace: {
-		  dist: {
-		    src: ['dist/*.html'],
-	      dest: 'dist/',
-	      replacements: [{
-	        from: '<img src="/images',
-	        to: '<img src="images'
-	      }, {
-	        from: 'href="/',
-	        to: 'href="'
-	      }, {
-	        from: 'src="/js',
-	        to: 'src="js'
-	      }, {
-	        from: 'url(/',
-	        to: 'url('
-	      }, {
-	        from: 'link rel="stylesheet" href="style.css"',
-	        to: 'link rel="stylesheet" href="style.css"'
-	      }]
-	    },
-		  menu: {
-		    src: ['dist/menus/*.html'],
-	      dest: 'dist/menus/',
-	      replacements: [{
-	        from: '<img src="/images',
-	        to: '<img src="../images'
-	      }, {
-	        from: 'href="/',
-	        to: 'href="../'
-	      }, {
-	        from: 'src="/js',
-	        to: 'src="../js'
-	      }, {
-	        from: 'url(/',
-	        to: 'url(../'
-	      }, {
-	        from: 'link rel="stylesheet" href="/style.css"',
-	        to: 'link rel="stylesheet" href="../style.css"'
-	      }]
-	    },
-		  blog: {
-		    src: ['dist/blog/*.html'],
-	      dest: 'dist/blog/',
-	      replacements: [{
-	        from: '<img src="/images',
-	        to: '<img src="../images'
-	      }, {
-	        from: 'href="/',
-	        to: 'href="../'
-	      }, {
-	        from: 'src="/js',
-	        to: 'src="js'
-	      }, {
-	        from: 'url(/',
-	        to: 'url(../'
-	      }, {
-	        from: 'link rel="stylesheet" href="/style.css"',
-	        to: 'link rel="stylesheet" href="../style.css"'
-	      }]
-	    },
-		  shop: {
-		    src: ['dist/shop/*.html'],
-	      dest: 'dist/shop/',
-	      replacements: [{
-	        from: '<img src="/images',
-	        to: '<img src="../images'
-	      }, {
-	        from: 'href="/',
-	        to: 'href="../'
-	      }, {
-	        from: 'src="/js',
-	        to: 'src="js'
-	      }, {
-	        from: 'url(/',
-	        to: 'url(../'
-	      }, {
-	        from: 'link rel="stylesheet" href="/style.css"',
-	        to: 'link rel="stylesheet" href="../style.css"'
-	      }]
-	    },
-		  recruit: {
-		    src: ['dist/recruit/*.html'],
-	      dest: 'dist/recruit/',
-	      replacements: [{
-	        from: '<img src="/images',
-	        to: '<img src="../images'
-	      }, {
-	        from: 'href="/',
-	        to: 'href="../'
-	      }, {
-	        from: 'src="/js',
-	        to: 'src="js'
-	      }, {
-	        from: 'url(/',
-	        to: 'url(../'
-	      }, {
-	        from: 'link rel="stylesheet" href="/style.css"',
-	        to: 'link rel="stylesheet" href="../style.css"'
-	      }]
-	    }
+			dist: {
+				src: ['dist/*.html'],
+				dest: 'dist/',
+				replacements: [{
+					from: '<img src="/images',
+					to: '<img src="images'
+				}, {
+					from: 'href="/',
+					to: 'href="'
+				}, {
+					from: 'src="/js',
+					to: 'src="js'
+				}, {
+					from: 'url(/',
+					to: 'url('
+				}, {
+					from: 'link rel="stylesheet" href="style.css"',
+					to: 'link rel="stylesheet" href="style.css"'
+				}]
+			},
+			menu: {
+				src: ['dist/menus/*.html'],
+				dest: 'dist/menus/',
+				replacements: [{
+					from: '<img src="/images',
+					to: '<img src="../images'
+				}, {
+					from: 'href="/',
+					to: 'href="../'
+				}, {
+					from: 'src="/js',
+					to: 'src="../js'
+				}, {
+					from: 'url(/',
+					to: 'url(../'
+				}, {
+					from: 'link rel="stylesheet" href="/style.css"',
+					to: 'link rel="stylesheet" href="../style.css"'
+				}]
+			},
+			blog: {
+				src: ['dist/blog/*.html'],
+				dest: 'dist/blog/',
+				replacements: [{
+					from: '<img src="/images',
+					to: '<img src="../images'
+				}, {
+					from: 'href="/',
+					to: 'href="../'
+				}, {
+					from: 'src="/js',
+					to: 'src="js'
+				}, {
+					from: 'url(/',
+					to: 'url(../'
+				}, {
+					from: 'link rel="stylesheet" href="/style.css"',
+					to: 'link rel="stylesheet" href="../style.css"'
+				}]
+			},
+			shop: {
+				src: ['dist/shop/*.html'],
+				dest: 'dist/shop/',
+				replacements: [{
+					from: '<img src="/images',
+					to: '<img src="../images'
+				}, {
+					from: 'href="/',
+					to: 'href="../'
+				}, {
+					from: 'src="/js',
+					to: 'src="js'
+				}, {
+					from: 'url(/',
+					to: 'url(../'
+				}, {
+					from: 'link rel="stylesheet" href="/style.css"',
+					to: 'link rel="stylesheet" href="../style.css"'
+				}]
+			},
+			recruit: {
+				src: ['dist/recruit/*.html'],
+				dest: 'dist/recruit/',
+				replacements: [{
+					from: '<img src="/images',
+					to: '<img src="../images'
+				}, {
+					from: 'href="/',
+					to: 'href="../'
+				}, {
+					from: 'src="/js',
+					to: 'src="js'
+				}, {
+					from: 'url(/',
+					to: 'url(../'
+				}, {
+					from: 'link rel="stylesheet" href="/style.css"',
+					to: 'link rel="stylesheet" href="../style.css"'
+				}]
+			}
 		},
+		csscomb: {
+				dist: {
+						options: {
+							config: '.csscomb.json'
+						},
+						files: {
+								'dist/style.css': ['dist/style.css'],
+						}
+				},
+		}
 	});
 
 
@@ -543,7 +553,8 @@ module.exports = function (grunt) {
 		'usemin',
 		'styleguide',
 		'htmlautofixer',
-		'stringreplace'
+		'stringreplace',
+		'csscomb'
 		]);
 
 	grunt.registerTask('htmlautofixer',[

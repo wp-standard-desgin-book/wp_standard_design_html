@@ -1,6 +1,6 @@
 // トップページ
 //
-// トップページのメインビジュアル用スタイルシート
+// トップページコンテンツ用スタイルシート
 //
 // Markup:
 // <div class="visual">
@@ -80,6 +80,8 @@
       margin-bottom: 2em;
       text-align: center;
 	    max-width: 100%;
+	    width: 100%;
+	    text-align: center;
     }
   }
 }
