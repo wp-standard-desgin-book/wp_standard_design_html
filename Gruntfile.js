@@ -250,8 +250,10 @@ module.exports = function (grunt) {
 						'images/**/*',
 						'fonts/**/*',
 						'!**/_*{,/**}',
+						'!*.scss',
 						'_bower_components/jquery/jquery.js',
 						'favicon.ico',
+						'screenshot.png',
 						'apple-touch*.png'
 					],
 					dest: '<%= yeoman.dist %>'
@@ -495,6 +497,14 @@ module.exports = function (grunt) {
 				}, {
 					from: 'link rel="stylesheet" href="/style.css"',
 					to: 'link rel="stylesheet" href="../style.css"'
+				}]
+			},
+			css: {
+				src: ['dist/*.css'],
+				dest: 'dist/',
+				replacements: [{
+					from: 'url(/images/',
+					to: 'url(images/'
 				}]
 			}
 		},

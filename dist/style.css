@@ -497,7 +497,7 @@ table th {
 
     color: #686868;
     border-radius: 2px;
-    background-image: url(/images/arrow-middle.png);
+    background-image: url(images/arrow-middle.png);
     background-repeat: no-repeat;
     background-position: 12px 14px;
 }
@@ -672,7 +672,7 @@ table th {
     margin-bottom: 16px;
 
     color: #454545;
-    background-image: url(/images/bg-widget-title.png);
+    background-image: url(images/bg-widget-title.png);
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -703,7 +703,7 @@ table th {
     text-decoration: none;
 
     color: #454545;
-    background-image: url(/images/arrow-large.png);
+    background-image: url(images/arrow-large.png);
     background-repeat: no-repeat;
     background-position: 220px center;
 }
@@ -775,7 +775,7 @@ table th {
     text-decoration: none;
 
     color: #454545;
-    background-image: url(/images/arrow-small.png);
+    background-image: url(images/arrow-small.png);
     background-repeat: no-repeat;
     background-position: 5px center;
 }
@@ -859,7 +859,7 @@ textarea {
     text-decoration: none;
 
     color: #fff;
-    background-image: url(/images/bg-btn-more.png);
+    background-image: url(images/bg-btn-more.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -882,7 +882,7 @@ textarea {
 
     letter-spacing: 4px;
 
-    background-image: url(/images/bg-entry-header.png);
+    background-image: url(images/bg-entry-header.png);
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -898,7 +898,7 @@ textarea {
 
     letter-spacing: 4px;
 
-    background-image: url(/images/bg-entry-header.png);
+    background-image: url(images/bg-entry-header.png);
     background-repeat: no-repeat;
     background-position: left bottom;
 }
