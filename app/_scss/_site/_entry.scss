@@ -408,13 +408,16 @@ table.contact-form {
 
 /* 8.14 ブログ一覧ページ
    -----------------------------------*/
-.blog-archive {
+.blog {
     .hentry {
         margin-bottom: 24px;
         padding: 24px;
 
         border: $base-border;
     }
+	   .archive-title{
+	       @extend .entry-title;
+	   }
     .entry-content {
 				overflow: hidden;
 /* 8.14 ブログ一覧 タイトル
