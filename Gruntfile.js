@@ -397,6 +397,13 @@ module.exports = function (grunt) {
 				src: ['*.html'],
 				dest: 'dist/blog/'
 			},
+			recruit: {
+				expand: true,
+				cwd: 'dist/recruit/',
+				ext: '.html',
+				src: ['*.html'],
+				dest: 'dist/recruit/'
+			},
 		},
 		replace: {
 			dist: {

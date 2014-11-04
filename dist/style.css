@@ -1107,21 +1107,23 @@ table.contact-form textarea {
 
 /* 8.14 ブログ一覧ページ
    -----------------------------------*/
+.blog {
+    /* 8.14 ブログ一覧 タイトル
+     -----------------------------------*/
+}
 .blog .hentry {
+    overflow: hidden;
+
     margin-bottom: 24px;
     padding: 24px;
 
     border: 1px solid #e8e8e8;
 }
-.blog .entry-content {
+.blog .entry-header {
     overflow: hidden;
-    /* 8.14 ブログ一覧 タイトル
-     -----------------------------------*/
-    /* 8.15 ブログ一覧 サムネイル画像
-     -----------------------------------*/
 }
-.blog .entry-content .entry-title,
-.blog .entry-content .archive-title {
+.blog .entry-title,
+.blog .archive-title {
     font-size: 16px;
 
     float: left;
@@ -1135,16 +1137,21 @@ table.contact-form textarea {
     background: none;
 }
 @media screen and (max-width: 640px) {
-    .blog .entry-content .entry-title,
-    .blog .entry-content .archive-title {
+    .blog .entry-title,
+    .blog .archive-title {
         float: none;
     }
 }
-.blog .entry-content .entry-title a,
-.blog .entry-content .archive-title a {
+.blog .entry-title a,
+.blog .archive-title a {
     text-decoration: none;
 
     color: #454545;
+}
+.blog .entry-content {
+    overflow: hidden;
+    /* 8.15 ブログ一覧 サムネイル画像
+     -----------------------------------*/
 }
 .blog .entry-content .entry-header {
     display: inline-block;
