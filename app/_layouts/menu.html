@@ -1,27 +1,34 @@
 ---
 layout: default
 ---
-						<!-- 記事コンテンツ -->
-						<div id="primary" class="content-area posts">
-							<div id="content" class="site-content" role="main">
+						<!--▼記事コンテンツエリア : 開始-->
+						<div id="primary" class="content-area posts"  role="main">
 
 								<article class="post hentry">
 
-									<!-- 記事 - ヘッダー -->
 									<header class="entry-header">
 										<h1 class="entry-title">
 											{{page.title}}
 										</h1>
+
+									<!--/.entry-header-->
 									</header>
 
-									<!-- 記事 - コンテンツ -->
 									<div class="entry-content">
+										<!--▼記事コンテンツ : 開始-->
+
 										{{content}}
+
+										<!--▲記事コンテンツ : 終了-->
+
+									<!--/.entry-content-->
 									</div>
 
+								<!--/.hentry-->
 								</article>
-							</div>
-						<!-- /記事コンテンツここまで -->
+
+						<!--▲記事コンテンツエリア : 終了-->
 						</div>
+
 						{% include post-navigation.html %}
 

@@ -6,6 +6,7 @@
   <body class="home">
     {% include header.html %}
 
+    <!--▼トップページ メインビジュアル : 開始-->
     <div class="visual">
       <img src="/images/main-visual.png" alt="いっぱいに込める思い。OzoneCafe">
       <div class="container">
@@ -13,26 +14,26 @@
 	        {{ page.description }}
         </h1>
       </div>
+
+    <!--▲トップページ メインビジュアル : 終了-->
     </div>
 
-    <main role="main">
+	  <!--▼メインコンテンツ 開始-->
+    <div id="main" class="l-one-column clearfix">
 
-      <div class="l-one-column clearfix">
+      <div class="container">
 
-        <div class="container">
+        <div class="l-main" role="main">
 
-          <div class="l-main">
+          {{ content }}
 
-            {{ content }}
-
-          <!-- /.l-main -->
-          </div>
-
+        <!-- /.l-main -->
         </div>
 
       </div>
 
-    </main>
+	  <!--▲メインコンテンツ 終了-->
+    </div>
 
     {% include footer.html %}
 

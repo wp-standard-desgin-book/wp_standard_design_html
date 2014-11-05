@@ -1,21 +1,24 @@
 ---
 layout: default
 ---
-						<div class="content-area posts">
-							<div class="site-content" role="main">
 
-								<section class="post blog-archive">
+						<!--▼記事コンテンツエリア : 開始-->
+						<div class="content-area posts" role="main">
 
-									<!-- 記事 - ヘッダー -->
-									<header class="entry-header">
-										<h1 class="entry-title archive-title">
-											{{page.title}}
-										</h1>
-									</header>
+							<header class="entry-header">
+								<h1 class="entry-title archive-title">
+									{{page.title}}
+								</h1>
 
-									<!-- ブログ記事 - ループ -->
-									{{content}}
+							<!--/.entry-header-->
+							</header>
 
-								</section>
-							</div>
+							<!-- ▼ブログ記事一覧 : 開始 -->
+
+							{{content}}
+
+							<!-- ▲ブログ記事一覧 : 終了 -->
+
+
+						<!--▲記事コンテンツエリア : 終了-->
 						</div>
