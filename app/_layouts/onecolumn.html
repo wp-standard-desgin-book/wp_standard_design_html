@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+	{% include head.html %}
 
-  <body class="home">
-    {% include header.html %}
+	<body class="home">
+		{% include header.html %}
 
-    <!--▼トップページ メインビジュアル : 開始-->
-    <div class="visual">
-      <img src="/images/main-visual.png" alt="いっぱいに込める思い。OzoneCafe">
-      <div class="container">
-        <h1 class="site-desctiption">
-	        {{ page.description }}
-        </h1>
-      </div>
+		<!--▼トップページ メインビジュアル : 開始-->
+		<div class="visual">
+			<img src="/images/main-visual.png" alt="いっぱいに込める思い。OzoneCafe">
+			<div class="container">
+				<h1 class="site-desctiption">
+					{{ page.description }}
+				</h1>
+			</div>
+		</div>
+		<!--▲トップページ メインビジュアル : 終了-->
 
-    <!--▲トップページ メインビジュアル : 終了-->
-    </div>
+		<!--▼メインコンテンツ 開始-->
+		<div id="main" class="l-one-column clearfix">
 
-	  <!--▼メインコンテンツ 開始-->
-    <div id="main" class="l-one-column clearfix">
+			<div class="container">
 
-      <div class="container">
+				<div class="l-main" role="main">
 
-        <div class="l-main" role="main">
+					{{ content }}
 
-          {{ content }}
+				</div><!-- /.l-main -->
 
-        <!-- /.l-main -->
-        </div>
+			</div>
 
-      </div>
+		</div>
+		<!--▲メインコンテンツ 終了-->
 
-	  <!--▲メインコンテンツ 終了-->
-    </div>
+		{% include footer.html %}
 
-    {% include footer.html %}
+		{% include scripts.html %}
 
-    {% include scripts.html %}
-
-  </body>
+	</body>
 </html>
