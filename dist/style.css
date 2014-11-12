@@ -875,8 +875,8 @@ textarea {
 /* 8.1 投稿タイトル
    -----------------------------------*/
 .entry-header .entry-title,
-.entry-header .blog .archive-title,
-.blog .entry-header .archive-title {
+.entry-header .archive .archive-title,
+.archive .entry-header .archive-title {
     font-size: 24px;
 
     margin-top: 0;
@@ -1110,11 +1110,11 @@ table.contact-form textarea {
 
 /* 8.14 ブログ一覧ページ
    -----------------------------------*/
-.blog {
+.archive {
     /* 8.14 ブログ一覧 タイトル
      -----------------------------------*/
 }
-.blog .hentry {
+.archive .hentry {
     overflow: hidden;
 
     margin-bottom: 24px;
@@ -1122,11 +1122,11 @@ table.contact-form textarea {
 
     border: 1px solid #e8e8e8;
 }
-.blog .entry-header {
+.archive .entry-header {
     overflow: hidden;
 }
-.blog .entry-title,
-.blog .archive-title {
+.archive .entry-title,
+.archive .archive-title {
     font-size: 16px;
 
     float: left;
@@ -1140,32 +1140,32 @@ table.contact-form textarea {
     background: none;
 }
 @media screen and (max-width: 640px) {
-    .blog .entry-title,
-    .blog .archive-title {
+    .archive .entry-title,
+    .archive .archive-title {
         float: none;
     }
 }
-.blog .entry-title a,
-.blog .archive-title a {
+.archive .entry-title a,
+.archive .archive-title a {
     text-decoration: none;
 
     color: #694329;
 }
-.blog .entry-title a:hover,
-.blog .archive-title a:hover {
+.archive .entry-title a:hover,
+.archive .archive-title a:hover {
     color: #8e5a37;
 }
-.blog .entry-content {
+.archive .entry-content {
     overflow: hidden;
     /* 8.15 ブログ一覧 サムネイル画像
      -----------------------------------*/
 }
-.blog .entry-content .entry-header {
+.archive .entry-content .entry-header {
     display: inline-block;
 
     width: 100%;
 }
-.blog .entry-content .thumbnail {
+.archive .entry-content .thumbnail {
     float: left;
 
     max-width: 175px;
