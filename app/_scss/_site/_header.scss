@@ -74,7 +74,7 @@
   }
 }
 
-.nav-menu{
+.header-navigation{
 	li{
 		display: inline-block;
 		position: relative;
@@ -160,9 +160,9 @@
 	}
 }
 
-.nav-menu li:hover > ul,
-.nav-menu ul li:hover > ul,
-.nav-menu .focus > ul {
+.header-navigation li:hover > ul,
+.header-navigation ul li:hover > ul,
+.header-navigation .focus > ul {
 	clip: inherit;
 	overflow: visible;
 	height: inherit;

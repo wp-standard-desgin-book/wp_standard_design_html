@@ -88,15 +88,18 @@ body {
 /* 0.2 リンク
    -----------------------------------*/
 a {
+    color: #694329;
     background: transparent;
 }
 
 a:focus {
+    color: #442c1b;
     outline: 0 none;
 }
 
 a:active,
 a:hover {
+    color: #8e5a37;
     outline: 0;
 }
 
@@ -461,18 +464,18 @@ table th {
     }
 }
 
-.nav-menu li {
+.header-navigation li {
     position: relative;
 
     display: inline-block;
 
     vertical-align: top;
 }
-.nav-menu li:hover {
+.header-navigation li:hover {
     background-color: #f5f5f5;
 }
 @media screen and (max-width: 640px) {
-    .nav-menu li {
+    .header-navigation li {
         float: none;
 
         width: 49%;
@@ -480,7 +483,7 @@ table th {
         text-align: center;
     }
 }
-.nav-menu a {
+.header-navigation a {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     line-height: 2.8em;
@@ -501,7 +504,7 @@ table th {
     background-repeat: no-repeat;
     background-position: 12px 14px;
 }
-.nav-menu .sub-menu {
+.header-navigation .sub-menu {
     position: absolute;
     z-index: 99999;
     left: 0;
@@ -517,7 +520,7 @@ table th {
     background-color: #f5f5f5;
 }
 @media screen and (max-width: 640px) {
-    .nav-menu .sub-menu {
+    .header-navigation .sub-menu {
         position: static;
 
         overflow: hidden;
@@ -527,7 +530,7 @@ table th {
         height: inherit;
     }
 }
-.nav-menu .sub-menu li {
+.header-navigation .sub-menu li {
     display: block;
     overflow: hidden;
 
@@ -535,29 +538,29 @@ table th {
 
     text-align: left;
 }
-.nav-menu .sub-menu li a {
+.header-navigation .sub-menu li a {
     display: block;
 }
-.nav-menu .sub-menu li a:hover {
+.header-navigation .sub-menu li a:hover {
     background-color: #fff;
 }
 @media screen and (max-width: 640px) {
-    .nav-menu .sub-menu {
+    .header-navigation .sub-menu {
         float: none;
 
         width: 100%;
     }
 }
-.nav-menu .sub-menu ul {
+.header-navigation .sub-menu ul {
     top: 0;
     left: 100%;
 
     border-left: 0;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu ul li:hover > ul,
-.nav-menu .focus > ul {
+.header-navigation li:hover > ul,
+.header-navigation ul li:hover > ul,
+.header-navigation .focus > ul {
     overflow: visible;
     clip: inherit;
 
@@ -820,7 +823,7 @@ textarea {
     width: 180px;
     margin-right: -5px;
 }
-.form-control .search-submit {
+.form-control #search-submit {
     font-weight: normal;
     line-height: 1.7em;
 
@@ -1146,7 +1149,11 @@ table.contact-form textarea {
 .blog .archive-title a {
     text-decoration: none;
 
-    color: #454545;
+    color: #694329;
+}
+.blog .entry-title a:hover,
+.blog .archive-title a:hover {
+    color: #8e5a37;
 }
 .blog .entry-content {
     overflow: hidden;
@@ -1192,6 +1199,9 @@ table.contact-form textarea {
     text-decoration: none;
 
     color: #fff;
+}
+.entry-meta .categories-links a:hover {
+    opacity: 0.8;
 }
 .entry-meta .categories-links.limited {
     background: #b5ad55;
@@ -1356,35 +1366,120 @@ table.contact-form textarea {
 
 /* 9.2 コメントフォーム フォーム関連
    -----------------------------------*/
-#comments {
-    padding: 16px;
+.comments-area {
+    margin-top: 1em;
+    padding: 0 16px 16px;
 
     border: 1px solid #e8e8e8;
 }
-#comments input[type=text],
-#comments input[type=url],
-#comments input[type=email],
-#comments textarea {
+.comments-area input[type=text],
+.comments-area input[type=url],
+.comments-area input[type=email],
+.comments-area textarea {
+    float: right;
+
     width: 430px;
 }
-#comments label {
+.comments-area label {
     display: inline-block;
 
     min-width: 230px;
 }
-#comments .form-allowed-tags {
+.comments-area .form-allowed-tags {
     font-size: 12px;
 }
-#comments .form-submit {
+.comments-area .form-submit {
     text-align: center;
 }
+.comments-area p {
+    clear: both;
+}
+.comments-area p label {
+    float: left;
+}
+.comments-area p small {
+    font-size: 0.6em;
+    line-height: 1em;
+}
+.comments-area textarea {
+    float: right;
+
+    margin-bottom: 1em;
+}
 @media screen and (max-width: 640px) {
-    #comments input[type=text],
-    #comments input[type=url],
-    #comments input[type=email],
-    #comments textarea {
+    .comments-area input[type=text],
+    .comments-area input[type=url],
+    .comments-area input[type=email],
+    .comments-area textarea {
         width: 100%;
     }
+}
+.comments-area #submit {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#respond h3 {
+    clear: both;
+}
+
+.comment-author {
+    left: 0;
+
+    float: left;
+
+    margin-right: 30px;
+}
+
+.commentlist {
+    padding-left: 0;
+
+    list-style: none;
+}
+.commentlist li {
+    position: relative;
+
+    margin-bottom: 1em;
+}
+.commentlist .children {
+    margin-left: 1.8em;
+}
+.commentlist .children .comment-body {
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+
+    border-top: 1px solid #e8e8e8;
+}
+.commentlist .comment-body {
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.commentlist .comment-reply-link {
+    font-size: 0.8em;
+
+    display: inline-block;
+
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+
+    text-decoration: none;
+
+    color: #fff;
+    border: 1px solid #8e5a37;
+    background: #694329;
+}
+.commentlist .comment-meta {
+    display: inline;
+}
+.commentlist .comment-meta + p {
+    display: inline;
+}
+.commentlist .comment-meta + p + .reply {
+    display: inline;
 }
 
 /*------------------------------------*\

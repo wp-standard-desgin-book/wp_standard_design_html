@@ -87,15 +87,18 @@ body {
    -----------------------------------*/
 a {
 		background: transparent;
+		color: $link-color;
 }
 
 a:focus {
 		outline: 0 none;
+		color: $link-focus-color;
 }
 
 a:active,
 a:hover {
 		outline: 0;
+		color: $link-hover-color;
 }
 
 /* 0.3 見出し

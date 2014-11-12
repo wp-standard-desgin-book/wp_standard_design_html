@@ -25,6 +25,12 @@ $h4-font-size :    1.4em !default;
 $h5-font-size :    1.2em !default;
 $h6-font-size :    1em !default;
 
+// リンクフォントカラー
+
+$link-color: #694329;
+$link-hover-color: lighten( $link-color, 10 );
+$link-focus-color: darken( $link-color, 10 );
+
 // 線
 
 $base-border-width: 1px;

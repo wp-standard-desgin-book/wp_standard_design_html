@@ -445,7 +445,10 @@ table.contact-form {
         a {
             text-decoration: none;
 
-            color: $base-font-color;
+            color: $link-color;
+            &:hover{
+            	color: $link-hover-color;
+            }
         }
 
     }
@@ -511,6 +514,9 @@ table.contact-form {
             text-decoration: none;
 
             color: #fff;
+            &:hover{
+            	opacity: 0.8;
+            }
         }
         &.limited {
             background: #b5ad55;
