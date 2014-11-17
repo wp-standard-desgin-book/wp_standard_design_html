@@ -41,9 +41,9 @@
 				margin-bottom: 24px;
 				padding-bottom: 16px;
 
-				letter-spacing: 4px;
+				letter-spacing: 2px;
 
-				background-image: url(/images/bg-entry-header.png);
+				background-image: url(/images/common/bg-entry-header.png);
 				background-repeat: no-repeat;
 				background-position: left bottom;
 		}
@@ -62,7 +62,7 @@
 
 				letter-spacing: 4px;
 
-				background-image: url(/images/bg-entry-header.png);
+				background-image: url(/images/common/bg-entry-header.png);
 				background-repeat: no-repeat;
 				background-position: left bottom;
 		}
@@ -313,6 +313,35 @@
 		}
 }
 
+/* 8.13 サムネイル画像
+	 -----------------------------------*/
+.entry-content {
+		.thumbnail{
+			margin-bottom: 2em;
+		}
+}
+
+.entry-footer {
+	span{
+		display: inline-block;
+		padding: 2px 16px;
+		padding-left: 28px;
+		border: $base-border;
+		a{
+			text-decoration: none;
+		}
+		&.comments-link{
+			background-image: url( images/icons/icon-chat.png );
+			background-repeat: no-repeat;
+			background-position: 7px center;
+		}
+		&.tag-links{
+			background-image: url( images/icons/icon-tag.png );
+			background-repeat: no-repeat;
+			background-position: 7px center;
+		}
+	}
+}
 
 // お問い合わせフォーム
 //
@@ -360,7 +389,7 @@
 //
 // Styleguide 6.4
 
-/* 8.13 お問い合わせフォーム
+/* 8.14 お問い合わせフォーム
 	 -----------------------------------*/
 table.contact-form {
 		margin-bottom: 2em;
@@ -495,34 +524,44 @@ table.contact-form {
 	 -----------------------------------*/
 .entry-meta {
 		margin-bottom: 24px;
-
 		text-align: right;
+		span{
+			display: inline-block;
+			padding: 2px 16px;
+		}
 		.author {
 				float: left;
+				background-image: url(images/icons/icon-date.png);
+				background-position: 8px center;
+				background-repeat: no-repeat;
 		}
 		.date {
-				padding: 4px 16px;
+				padding-left: 28px;
 				border: $base-border;
+				background-image: url(images/icons/icon-date.png);
+				background-position: 8px center;
+				background-repeat: no-repeat;
 		}
 		.categories-links {
 				margin-left: 16px;
-				padding: 4px 16px;
+				padding-left: 28px;
 				border: $base-border;
+				background-image: url(images/icons/icon-category.png);
+				background-position: 8px center;
+				background-repeat: no-repeat;
 				a {
 						font-size: 12px;
-
 						text-decoration: none;
-
 						color: #fff;
 						&:hover{
 							opacity: 0.8;
 						}
 				}
 				&.limited {
-						background: #b5ad55;
+						background-color: #b5ad55;
 				}
 				&.info {
-						background: #8b6c6c;
+						background-color: #8b6c6c;
 				}
 		}
 		@media screen and(max-width: 640px) {
@@ -613,7 +652,6 @@ table.contact-form {
 
 }
 
-
 .post-navigation a[rel='next'] {
 		float: right;
 
@@ -665,7 +703,7 @@ table.contact-form {
 
 				width: 431px;
 				p {
-						margin-bottom: 48px;
+						margin-bottom: 2em;
 				}
 				@media screen and(max-width: 940px) {
 					float: none;

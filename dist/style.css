@@ -502,7 +502,7 @@ table th {
 
     color: #686868;
     border-radius: 2px;
-    background-image: url(images/arrow-middle.png);
+    background-image: url(images/icons/arrow-middle.png);
     background-repeat: no-repeat;
     background-position: 12px 14px;
 }
@@ -684,7 +684,7 @@ table th {
     margin-bottom: 16px;
 
     color: #454545;
-    background-image: url(images/bg-widget-title.png);
+    background-image: url(images/common/bg-widget-title.png);
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -715,7 +715,7 @@ table th {
     text-decoration: none;
 
     color: #454545;
-    background-image: url(images/arrow-large.png);
+    background-image: url(images/icons/arrow-large.png);
     background-repeat: no-repeat;
     background-position: 220px center;
 }
@@ -787,7 +787,7 @@ table th {
     text-decoration: none;
 
     color: #454545;
-    background-image: url(images/arrow-small.png);
+    background-image: url(images/icons/arrow-small.png);
     background-repeat: no-repeat;
     background-position: 5px center;
 }
@@ -873,7 +873,7 @@ textarea {
     text-decoration: none;
 
     color: #fff;
-    background-image: url(images/bg-btn-more.png);
+    background-image: url(images/common/bg-btn-more.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -894,9 +894,9 @@ textarea {
     margin-bottom: 24px;
     padding-bottom: 16px;
 
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 
-    background-image: url(images/bg-entry-header.png);
+    background-image: url(images/common/bg-entry-header.png);
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -912,7 +912,7 @@ textarea {
 
     letter-spacing: 4px;
 
-    background-image: url(images/bg-entry-header.png);
+    background-image: url(images/common/bg-entry-header.png);
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -1067,7 +1067,35 @@ textarea {
     background: #f7f7f7;
 }
 
-/* 8.13 お問い合わせフォーム
+/* 8.13 サムネイル画像
+	 -----------------------------------*/
+.entry-content .thumbnail {
+    margin-bottom: 2em;
+}
+
+.entry-footer span {
+    display: inline-block;
+
+    padding: 2px 16px;
+    padding-left: 28px;
+
+    border: 1px solid #e8e8e8;
+}
+.entry-footer span a {
+    text-decoration: none;
+}
+.entry-footer span.comments-link {
+    background-image: url(images/icons/icon-chat.png);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+.entry-footer span.tag-links {
+    background-image: url(images/icons/icon-tag.png);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+
+/* 8.14 お問い合わせフォーム
 	 -----------------------------------*/
 table.contact-form {
     margin-bottom: 2em;
@@ -1191,19 +1219,34 @@ table.contact-form textarea {
 
     text-align: right;
 }
+.entry-meta span {
+    display: inline-block;
+
+    padding: 2px 16px;
+}
 .entry-meta .author {
     float: left;
+
+    background-image: url(images/icons/icon-date.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
 }
 .entry-meta .date {
-    padding: 4px 16px;
+    padding-left: 28px;
 
     border: 1px solid #e8e8e8;
+    background-image: url(images/icons/icon-date.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
 }
 .entry-meta .categories-links {
     margin-left: 16px;
-    padding: 4px 16px;
+    padding-left: 28px;
 
     border: 1px solid #e8e8e8;
+    background-image: url(images/icons/icon-category.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
 }
 .entry-meta .categories-links a {
     font-size: 12px;
@@ -1216,10 +1259,10 @@ table.contact-form textarea {
     opacity: 0.8;
 }
 .entry-meta .categories-links.limited {
-    background: #b5ad55;
+    background-color: #b5ad55;
 }
 .entry-meta .categories-links.info {
-    background: #8b6c6c;
+    background-color: #8b6c6c;
 }
 @media screen and (max-width: 640px) {
     .entry-meta .author {
@@ -1353,7 +1396,7 @@ table.contact-form textarea {
     width: 431px;
 }
 .menu-detail .menu-content p {
-    margin-bottom: 48px;
+    margin-bottom: 2em;
 }
 @media screen and (max-width: 940px) {
     .menu-detail .menu-content {
@@ -1606,6 +1649,11 @@ a img.aligncenter {
     max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
+}
+@media screen and (max-width: 640px) {
+    .visual img {
+        max-width: 100%;
+    }
 }
 .visual .site-desctiption {
     font-size: 20px;

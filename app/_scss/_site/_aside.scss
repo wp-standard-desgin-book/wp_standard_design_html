@@ -67,7 +67,7 @@
 		margin-bottom: 16px;
 
 		color: $base-font-color;
-		background-image: url(/images/bg-widget-title.png);
+		background-image: url(/images/common/bg-widget-title.png);
 		background-repeat: no-repeat;
 		background-position: bottom;
 }
@@ -99,7 +99,7 @@
 								text-decoration: none;
 
 								color: $base-font-color;
-								background-image: url(/images/arrow-large.png);
+								background-image: url(/images/icons/arrow-large.png);
 								background-repeat: no-repeat;
 								background-position: 220px center;
 								&:hover {
