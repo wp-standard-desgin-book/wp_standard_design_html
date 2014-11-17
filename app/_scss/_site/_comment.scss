@@ -68,8 +68,7 @@
 	margin-top: 1em;
 	input[type=text],
 	input[type=url],
-	input[type=email],
-	textarea{
+	input[type=email]{
 		width: 430px;
 		float: right;
 	}
@@ -92,13 +91,12 @@
 			float: left;
 		}
 		small{
-			font-size: 0.6em;
-			line-height: 1em;
+			font-size: 0.8em;
 		}
 	}
 
 	textarea{
-		float: right;
+		width: 100%;
 		margin-bottom: 1em;
 	}
 
