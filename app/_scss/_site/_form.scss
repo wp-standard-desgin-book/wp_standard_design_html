@@ -16,14 +16,14 @@ textarea{
 
 /* 7.1 検索フォーム
 	 -----------------------------------*/
-.form-control{
+#searchform{
 
-	input[type=search]{
+	#s{
 		width: 180px;
 		margin-right: -5px;
 	}
 
-	#search-submit{
+	#searchsubmit{
 		margin-left: 0;
 		margin-right: 0;
 		background: #7D5031;
@@ -44,7 +44,6 @@ textarea{
 		-webkit-border-radius: 0 5px 5px 0;
 						border-radius: 0 5px 5px 0;
 	}
-
 }
 /* 7.2 ボタン
 	 -----------------------------------*/

@@ -31,6 +31,15 @@
 		margin-right: auto;
 		padding: 1.6em;
 	}
+	.menu-more{
+		a{
+			padding: 2px;
+			&:hover{
+				opacity: 0.8;
+				color: #FFF;
+			}
+		}
+	}
 }
 
 /* 4.2 メニュー名

@@ -26,128 +26,128 @@
 // Styleguide 6.1
 
 /*------------------------------------*\
-  8.0 投稿関連
-  - - -
-  投稿コンテンツ内のスタイル指定
+	8.0 投稿関連
+	- - -
+	投稿コンテンツ内のスタイル指定
 \*------------------------------------*/
 
 /* 8.1 投稿タイトル
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-header {
-    .entry-title {
-        font-size: 24px;
+		.entry-title {
+				font-size: 24px;
 
-        margin-top: 0;
-        margin-bottom: 24px;
-        padding-bottom: 16px;
+				margin-top: 0;
+				margin-bottom: 24px;
+				padding-bottom: 16px;
 
-        letter-spacing: 4px;
+				letter-spacing: 4px;
 
-        background-image: url(/images/bg-entry-header.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-    }
+				background-image: url(/images/bg-entry-header.png);
+				background-repeat: no-repeat;
+				background-position: left bottom;
+		}
 }
 
 
 /* 8.2 見出しh1
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    h1 {
-        font-size: 24px;
+		h1 {
+				font-size: 24px;
 
-        margin-top: 0;
-        margin-bottom: 24px;
-        padding-bottom: 16px;
+				margin-top: 0;
+				margin-bottom: 24px;
+				padding-bottom: 16px;
 
-        letter-spacing: 4px;
+				letter-spacing: 4px;
 
-        background-image: url(/images/bg-entry-header.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-    }
+				background-image: url(/images/bg-entry-header.png);
+				background-repeat: no-repeat;
+				background-position: left bottom;
+		}
 }
 /* 8.3 見出しh2
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    h2 {
-        font-size: 20px;
-        line-height: 1.5em;
+		h2 {
+				font-size: 20px;
+				line-height: 1.5em;
 
-        margin-top: 24px;
-        margin-bottom: 24px;
-        padding-bottom: 14px;
+				margin-top: 24px;
+				margin-bottom: 24px;
+				padding-bottom: 14px;
 
-        color: $base-font-color;
-        border-bottom: 1px solid $gray;
-    }
+				color: $base-font-color;
+				border-bottom: 1px solid $gray;
+		}
 }
 /* 8.4 見出しh3
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    h3 {
-        font-size: 18px;
-        line-height: 27px;
+		h3 {
+				font-size: 18px;
+				line-height: 27px;
 
-        position: relative;
+				position: relative;
 
-        margin-bottom: 16px;
-        padding-bottom: 5px;
+				margin-bottom: 16px;
+				padding-bottom: 5px;
 
-        border-bottom: 1px solid $gray;
-        &:before {
-            display: inline-block;
+				border-bottom: 1px solid $gray;
+				&:before {
+						display: inline-block;
 
-            width: 10px;
-            height: 10px;
-            margin-right: 8px;
-            margin-left: 8px;
+						width: 10px;
+						height: 10px;
+						margin-right: 8px;
+						margin-left: 8px;
 
-            content: '';
+						content: '';
 
-            -webkit-border-radius: 50%;
-                    border-radius: 50%;
-            background: #ffcfae;
-            background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-            background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-            background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-            background-image:      linear-gradient(-134deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
-        }
-    }
+						-webkit-border-radius: 50%;
+										border-radius: 50%;
+						background: #ffcfae;
+						background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+						background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+						background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+						background-image:      linear-gradient(-134deg, rgba(211,120,120,0.50) 0%, rgba(149,36,129,0.50) 50%, rgba(185,199,39,0.50) 100%);
+				}
+		}
 }
 /* 8.5 見出しh4
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    h4 {
-        font-size: 16px;
+		h4 {
+				font-size: 16px;
 
-        margin-top: 8px;
-        margin-bottom: 8px;
-        &:before {
-            display: inline-block;
+				margin-top: 8px;
+				margin-bottom: 8px;
+				&:before {
+						display: inline-block;
 
-            margin-right: 0;
-            margin-left: 0;
+						margin-right: 0;
+						margin-left: 0;
 
-            content: '・';
-        }
-    }
+						content: '・';
+				}
+		}
 }
 /* 8.6 見出しh5
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    h5 {
-        font-size: 14px;
-        font-weight: 700;
-    }
+		h5 {
+				font-size: 14px;
+				font-weight: 700;
+		}
 }
 /* 8.7 見出しh6
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    h6 {
-        font-size: 14px;
-        font-weight: 100;
-    }
+		h6 {
+				font-size: 14px;
+				font-weight: 100;
+		}
 }
 
 // テキストのスタイル
@@ -187,68 +187,68 @@
 // Styleguide 6.2
 
 /* 8.7 段落
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
 
-    p {
-        line-height: 2em;
+		p {
+				line-height: 2em;
 
-        margin-top: 0;
-        margin-bottom: 8px;
-    }
+				margin-top: 0;
+				margin-bottom: 8px;
+		}
 }
 
 .entry-content {
 
 /* 8.8 定義リスト
-   -----------------------------------*/
-    dl {
-        dt {
-            display: inline-block;
+	 -----------------------------------*/
+		dl {
+				dt {
+						display: inline-block;
 
-            margin-bottom: 1.14297em;
+						margin-bottom: 1.14297em;
 
-            border-bottom: 1px dashed $gray;
+						border-bottom: 1px dashed $gray;
 
-            font-weight: bold;
-        }
-        dd {
-            margin-bottom: 1.14297em;
-            margin-left: 1.14297em;
-        }
-    }
+						font-weight: bold;
+				}
+				dd {
+						margin-bottom: 1.14297em;
+						margin-left: 1.14297em;
+				}
+		}
 }
 .entry-content {
 /* 8.9 小さいテキスト
-   -----------------------------------*/
-    small {
-        font-size: 0.8em;
-    }
+	 -----------------------------------*/
+		small {
+				font-size: 0.8em;
+		}
 }
 /* 8.10 強調テキスト
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    strong {
-        font-weight: bold;
+		strong {
+				font-weight: bold;
 
-        color: #905643;
-    }
+				color: #905643;
+		}
 }
 /* 8.11 コードプレビュー
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    pre {
-        padding: 16px;
+		pre {
+				padding: 16px;
 
-        background: $gray;
-    }
-    code {
-        display: inline;
+				background: $gray;
+		}
+		code {
+				display: inline;
 
-        padding: 2px 5px;
+				padding: 2px 5px;
 
-        background: $gray;
-    }
+				background: $gray;
+		}
 }
 
 // テーブル
@@ -292,25 +292,25 @@
 // Styleguide 6.3
 
 /* 8.12 テーブル
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content {
-    table {
-        th,
-        td {
-            line-height: 2em;
+		table {
+				th,
+				td {
+						line-height: 2em;
 
-            text-align: center;
+						text-align: center;
 
-            border: 1px solid $gray;
-        }
-        th {
-            font-weight: normal;
+						border: 1px solid $gray;
+				}
+				th {
+						font-weight: normal;
 
-            padding-left: 0;
+						padding-left: 0;
 
-            background: #f7f7f7;
-        }
-    }
+						background: #f7f7f7;
+				}
+		}
 }
 
 
@@ -361,114 +361,114 @@
 // Styleguide 6.4
 
 /* 8.13 お問い合わせフォーム
-   -----------------------------------*/
+	 -----------------------------------*/
 table.contact-form {
-    margin-bottom: 2em;
+		margin-bottom: 2em;
 
-    border: $base-border;
-    th {
-        width: 30%;
-        padding-top: 1.3em;
-        padding-bottom: 1.3em;
-        padding-left: 2.6em;
+		border: $base-border;
+		th {
+				width: 30%;
+				padding-top: 1.3em;
+				padding-bottom: 1.3em;
+				padding-left: 2.6em;
 
-        vertical-align: top;
-    }
-    td {
-        width: 70%;
-        padding-top: 1.3em;
-        padding-bottom: 1.3em;
-        padding-left: 2em;
+				vertical-align: top;
+		}
+		td {
+				width: 70%;
+				padding-top: 1.3em;
+				padding-bottom: 1.3em;
+				padding-left: 2em;
 
-        text-align: left;
-        textarea,
-        input {
-            width: auto;
-            min-width: 70%;
-        }
-    }
-    textarea {
-        min-height: 200px;
-    }
-    @media screen and(max-width: 640px) {
-      display: block;
-      tbody,
-      thead,
-      th,td,tr{
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-      th,td{
-        padding-left: 1em;
-      }
-    }
+				text-align: left;
+				textarea,
+				input {
+						width: auto;
+						min-width: 70%;
+				}
+		}
+		textarea {
+				min-height: 200px;
+		}
+		@media screen and(max-width: 640px) {
+			display: block;
+			tbody,
+			thead,
+			th,td,tr{
+				display: block;
+				width: 100%;
+				text-align: left;
+			}
+			th,td{
+				padding-left: 1em;
+			}
+		}
 }
 
 
 /* 8.14 ブログ一覧ページ
-   -----------------------------------*/
+	 -----------------------------------*/
 .archive {
-    .hentry {
-        margin-bottom: 24px;
-        padding: 24px;
+		.hentry {
+				margin-bottom: 24px;
+				padding: 24px;
 
-        border: $base-border;
-        overflow: hidden;
-
-    }
-	  .archive-title{
-	      @extend .entry-title;
-	  }
-
-    .entry-header{
-    	overflow: hidden;
-    }
-/* 8.14 ブログ一覧 タイトル
-   -----------------------------------*/
-    .entry-title {
-        font-size: 16px;
-
-        float: left;
-
-        margin-bottom: 16px;
-        padding-bottom: 0;
-
-        letter-spacing: 0;
-
-        border-bottom: none;
-        background: none;
-
-        @media screen and(max-width: 640px) {
-          float: none;
-        }
-        a {
-            text-decoration: none;
-
-            color: $link-color;
-            &:hover{
-            	color: $link-hover-color;
-            }
-        }
-
-    }
-
-    .entry-content {
+				border: $base-border;
 				overflow: hidden;
-        .entry-header {
-            display: inline-block;
 
-            width: 100%;
-        }
+		}
+		.archive-title{
+				@extend .entry-title;
+		}
+
+		.entry-header{
+			overflow: hidden;
+		}
+/* 8.14 ブログ一覧 タイトル
+	 -----------------------------------*/
+		.entry-title {
+				font-size: 16px;
+
+				float: left;
+
+				margin-bottom: 16px;
+				padding-bottom: 0;
+
+				letter-spacing: 0;
+
+				border-bottom: none;
+				background: none;
+
+				@media screen and(max-width: 640px) {
+					float: none;
+				}
+				a {
+						text-decoration: none;
+
+						color: $link-color;
+						&:hover{
+							color: $link-hover-color;
+						}
+				}
+
+		}
+
+		.entry-content {
+				overflow: hidden;
+				.entry-header {
+						display: inline-block;
+
+						width: 100%;
+				}
 
 /* 8.15 ブログ一覧 サムネイル画像
-   -----------------------------------*/
-        .thumbnail {
-            float: left;
+	 -----------------------------------*/
+				.thumbnail {
+						float: left;
 						max-width: 175px;
-            margin-right: 16px;
-        }
-    }
+						margin-right: 16px;
+				}
+		}
 }
 
 
@@ -492,53 +492,53 @@ table.contact-form {
 // Styleguide 6.5
 
 /* 8.16 投稿メタ情報
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-meta {
-    margin-bottom: 24px;
+		margin-bottom: 24px;
 
-    text-align: right;
-    .author {
-        float: left;
-    }
-    .date {
-        padding: 4px 16px;
-        border: $base-border;
-    }
-    .categories-links {
-        margin-left: 16px;
-        padding: 4px 16px;
-        border: $base-border;
-        a {
-            font-size: 12px;
+		text-align: right;
+		.author {
+				float: left;
+		}
+		.date {
+				padding: 4px 16px;
+				border: $base-border;
+		}
+		.categories-links {
+				margin-left: 16px;
+				padding: 4px 16px;
+				border: $base-border;
+				a {
+						font-size: 12px;
 
-            text-decoration: none;
+						text-decoration: none;
 
-            color: #fff;
-            &:hover{
-            	opacity: 0.8;
-            }
-        }
-        &.limited {
-            background: #b5ad55;
-        }
-        &.info {
-            background: #8b6c6c;
-        }
-    }
-    @media screen and(max-width: 640px) {
-        .author {
-            float: none;
-        }
-        span {
-            display: block;
-            margin-bottom: 8px;
-            text-align: center;
-        }
-        .categories-links {
-            margin-right: 0;
-            margin-left: 0;
-        }
-    }
+						color: #fff;
+						&:hover{
+							opacity: 0.8;
+						}
+				}
+				&.limited {
+						background: #b5ad55;
+				}
+				&.info {
+						background: #8b6c6c;
+				}
+		}
+		@media screen and(max-width: 640px) {
+				.author {
+						float: none;
+				}
+				span {
+						display: block;
+						margin-bottom: 8px;
+						text-align: center;
+				}
+				.categories-links {
+						margin-right: 0;
+						margin-left: 0;
+				}
+		}
 }
 
 // 投稿ナビゲーション
@@ -557,119 +557,119 @@ table.contact-form {
 // Styleguide 6.6
 
 /* 8.17 投稿ナビゲーション、一覧ページネーション
-   -----------------------------------*/
+	 -----------------------------------*/
 .post-navigation,
 .paging-navigation {
-    font-size: $base-font-size;
-    font-weight: 300;
+		font-size: $base-font-size;
+		font-weight: 300;
 
-    padding: 20px 0;
+		padding: 20px 0;
 
-    color: #fff;
-    background-color: #fff;
+		color: #fff;
+		background-color: #fff;
 }
 
 .post-navigation .nav-links,
 .paging-navigation .nav-links {
-    margin: 0 auto;
-    a {
-        line-height: 1.7em;
+		margin: 0 7px;
+		a {
+				line-height: 1.7em;
 
-        position: relative;
+				position: relative;
 
-        display: inline-block;
+				display: inline-block;
 
-        width: 214px;
+				width: 214px;
 
-        text-align: center;
-        text-decoration: none;
+				text-align: center;
+				text-decoration: none;
 
-        color: #fff;
-        background: #7d5031;
-        background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-        background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-        background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-        background-image:      linear-gradient(-134deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
-        &:after {
-            position: absolute;
-            top: -7px;
-            left: -7px;
+				color: #fff;
+				background: #7d5031;
+				background-image:   -o-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				background-image: -moz-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				background-image:  -ms-linear-gradient(-44deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				background-image:      linear-gradient(-134deg, rgba(211,120,120,0.25) 0%, rgba(149,36,129,0.25) 50%, rgba(185,199,39,0.25) 100%);
+				&:after {
+						position: absolute;
+						top: -7px;
+						left: -7px;
 
-            width: 226px;
-            height: 36px;
+						width: 226px;
+						height: 36px;
 
-            content: '';
+						content: '';
 
-            border: $base-border;
-        }
-        @media screen and(max-width: 640px) {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 24px;
-        }
+						border: $base-border;
+				}
+				@media screen and(max-width: 640px) {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 24px;
+				}
 
-    }
+		}
 
 }
 
 
 .post-navigation a[rel='next'] {
-    float: right;
+		float: right;
 
-    text-align: center;
-    @media screen and(max-width: 640px) {
-      float: none;
-    }
+		text-align: center;
+		@media screen and(max-width: 640px) {
+			float: none;
+		}
 }
 
 .paging-navigation {
-    .nav-previous {
-        float: left;
-    }
-    .nav-next {
-        float: right;
-    }
-    @media screen and(max-width: 640px) {
-      .nav-previous {
-          float: none;
-      }
-      .nav-next {
-          float: none;
-      }
-    }
+		.nav-previous {
+				float: left;
+		}
+		.nav-next {
+				float: right;
+		}
+		@media screen and(max-width: 640px) {
+			.nav-previous {
+					float: none;
+			}
+			.nav-next {
+					float: none;
+			}
+		}
 }
 
 /* 8.18 メニュー詳細 コンテンツ
-   -----------------------------------*/
-.menu-content {
-    overflow: hidden;
-    .menu-thumbnail {
-        float: left;
+	 -----------------------------------*/
+.menu-detail {
+		overflow: hidden;
+		.menu-thumbnail {
+				float: left;
 
-        width: 256px;
-        margin-right: 24px;
-        padding: 5px;
+				width: 256px;
+				margin-right: 24px;
+				padding: 5px;
 
-        border: $base-border;
-        img {
-            max-width: 100%;
-        }
-		    @media screen and(max-width: 940px) {
-		      float: none;
-		      width: 100%;
-		    }
-    }
-    .menu-detail {
-        float: right;
+				border: $base-border;
+				img {
+						max-width: 100%;
+				}
+				@media screen and(max-width: 940px) {
+					float: none;
+					width: 100%;
+				}
+		}
+		.menu-content {
+				float: right;
 
-        width: 431px;
-        p {
-            margin-bottom: 48px;
-        }
-		    @media screen and(max-width: 940px) {
-		      float: none;
-		      width: 100%;
-		    }
-    }
+				width: 431px;
+				p {
+						margin-bottom: 48px;
+				}
+				@media screen and(max-width: 940px) {
+					float: none;
+					width: 100%;
+				}
+		}
 }

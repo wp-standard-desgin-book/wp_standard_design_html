@@ -203,6 +203,7 @@ sub {
 
 img {
     max-width: 100%;
+    height: auto;
 
     vertical-align: top;
 
@@ -653,6 +654,13 @@ table th {
     border: 1px solid #e8e8e8;
     border-radius: 50%;
 }
+.menu-block .menu-more a {
+    padding: 2px;
+}
+.menu-block .menu-more a:hover {
+    opacity: 0.8;
+    color: #fff;
+}
 
 /* 4.2 メニュー名
  -------------------------------------*/
@@ -688,14 +696,14 @@ table th {
 
 /* 5.2 カテゴリ一覧ウィジェット
    -----------------------------------*/
-.widget_category ul {
+.widget_categories ul {
     border: 1px solid #e8e8e8;
     border-bottom: none;
 }
-.widget_category ul li {
+.widget_categories ul li {
     border-bottom: 1px solid #e8e8e8;
 }
-.widget_category ul li a {
+.widget_categories ul li a {
     font-weight: bold;
     line-height: 3.4em;
 
@@ -710,15 +718,15 @@ table th {
     background-repeat: no-repeat;
     background-position: 220px center;
 }
-.widget_category ul li a:hover {
+.widget_categories ul li a:hover {
     background-color: #f5f5f5;
 }
-.widget_category ul li a:active {
+.widget_categories ul li a:active {
     background-color: #e8e8e8;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 640px) {
-    .widget_category {
+    .widget_categories {
         width: 250px;
         margin-right: auto;
         margin-left: auto;
@@ -819,11 +827,11 @@ textarea {
 
 /* 7.1 検索フォーム
 	 -----------------------------------*/
-.form-control input[type=search] {
+#searchform #s {
     width: 180px;
     margin-right: -5px;
 }
-.form-control #search-submit {
+#searchform #searchsubmit {
     font-weight: normal;
     line-height: 1.7em;
 
@@ -868,12 +876,12 @@ textarea {
 }
 
 /*------------------------------------*\
-  8.0 投稿関連
-  - - -
-  投稿コンテンツ内のスタイル指定
+	8.0 投稿関連
+	- - -
+	投稿コンテンツ内のスタイル指定
 \*------------------------------------*/
 /* 8.1 投稿タイトル
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-header .entry-title,
 .entry-header .archive .archive-title,
 .archive .entry-header .archive-title {
@@ -891,7 +899,7 @@ textarea {
 }
 
 /* 8.2 見出しh1
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content h1 {
     font-size: 24px;
 
@@ -907,7 +915,7 @@ textarea {
 }
 
 /* 8.3 見出しh2
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content h2 {
     font-size: 20px;
     line-height: 1.5em;
@@ -921,7 +929,7 @@ textarea {
 }
 
 /* 8.4 見出しh3
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content h3 {
     font-size: 18px;
     line-height: 27px;
@@ -950,7 +958,7 @@ textarea {
 }
 
 /* 8.5 見出しh4
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content h4 {
     font-size: 16px;
 
@@ -967,21 +975,21 @@ textarea {
 }
 
 /* 8.6 見出しh5
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content h5 {
     font-size: 14px;
     font-weight: 700;
 }
 
 /* 8.7 見出しh6
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content h6 {
     font-size: 14px;
     font-weight: 100;
 }
 
 /* 8.7 段落
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content p {
     line-height: 2em;
 
@@ -991,7 +999,7 @@ textarea {
 
 .entry-content {
     /* 8.8 定義リスト
-     -----------------------------------*/
+  	 -----------------------------------*/
 }
 .entry-content dl dt {
     font-weight: bold;
@@ -1009,14 +1017,14 @@ textarea {
 
 .entry-content {
     /* 8.9 小さいテキスト
-     -----------------------------------*/
+  	 -----------------------------------*/
 }
 .entry-content small {
     font-size: 0.8em;
 }
 
 /* 8.10 強調テキスト
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content strong {
     font-weight: bold;
 
@@ -1024,7 +1032,7 @@ textarea {
 }
 
 /* 8.11 コードプレビュー
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content pre {
     padding: 16px;
 
@@ -1039,7 +1047,7 @@ textarea {
 }
 
 /* 8.12 テーブル
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-content table th,
 .entry-content table td {
     line-height: 2em;
@@ -1057,7 +1065,7 @@ textarea {
 }
 
 /* 8.13 お問い合わせフォーム
-   -----------------------------------*/
+	 -----------------------------------*/
 table.contact-form {
     margin-bottom: 2em;
 
@@ -1109,10 +1117,10 @@ table.contact-form textarea {
 }
 
 /* 8.14 ブログ一覧ページ
-   -----------------------------------*/
+	 -----------------------------------*/
 .archive {
     /* 8.14 ブログ一覧 タイトル
-     -----------------------------------*/
+  	 -----------------------------------*/
 }
 .archive .hentry {
     overflow: hidden;
@@ -1158,7 +1166,7 @@ table.contact-form textarea {
 .archive .entry-content {
     overflow: hidden;
     /* 8.15 ブログ一覧 サムネイル画像
-     -----------------------------------*/
+  	 -----------------------------------*/
 }
 .archive .entry-content .entry-header {
     display: inline-block;
@@ -1173,7 +1181,7 @@ table.contact-form textarea {
 }
 
 /* 8.16 投稿メタ情報
-   -----------------------------------*/
+	 -----------------------------------*/
 .entry-meta {
     margin-bottom: 24px;
 
@@ -1227,7 +1235,7 @@ table.contact-form textarea {
 }
 
 /* 8.17 投稿ナビゲーション、一覧ページネーション
-   -----------------------------------*/
+	 -----------------------------------*/
 .post-navigation,
 .paging-navigation {
     font-size: 14px;
@@ -1241,7 +1249,7 @@ table.contact-form textarea {
 
 .post-navigation .nav-links,
 .paging-navigation .nav-links {
-    margin: 0 auto;
+    margin: 0 7px;
 }
 .post-navigation .nav-links a,
 .paging-navigation .nav-links a {
@@ -1312,11 +1320,11 @@ table.contact-form textarea {
 }
 
 /* 8.18 メニュー詳細 コンテンツ
-   -----------------------------------*/
-.menu-content {
+	 -----------------------------------*/
+.menu-detail {
     overflow: hidden;
 }
-.menu-content .menu-thumbnail {
+.menu-detail .menu-thumbnail {
     float: left;
 
     width: 256px;
@@ -1325,26 +1333,26 @@ table.contact-form textarea {
 
     border: 1px solid #e8e8e8;
 }
-.menu-content .menu-thumbnail img {
+.menu-detail .menu-thumbnail img {
     max-width: 100%;
 }
 @media screen and (max-width: 940px) {
-    .menu-content .menu-thumbnail {
+    .menu-detail .menu-thumbnail {
         float: none;
 
         width: 100%;
     }
 }
-.menu-content .menu-detail {
+.menu-detail .menu-content {
     float: right;
 
     width: 431px;
 }
-.menu-content .menu-detail p {
+.menu-detail .menu-content p {
     margin-bottom: 48px;
 }
 @media screen and (max-width: 940px) {
-    .menu-content .menu-detail {
+    .menu-detail .menu-content {
         float: none;
 
         width: 100%;
@@ -1584,12 +1592,19 @@ a img.aligncenter {
 }
 
 /*------------------------------------*\
-  11.0 トップページ
+	11.0 トップページ
 \*------------------------------------*/
 /* 11.1 メインビジュアル
-   -----------------------------------*/
+	 -----------------------------------*/
 .visual .container {
     position: relative;
+}
+.visual img {
+    display: block;
+
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .visual .site-desctiption {
     font-size: 20px;
@@ -1619,7 +1634,7 @@ a img.aligncenter {
 }
 
 /* 11.2 トップページ/バナー
-   -----------------------------------*/
+	 -----------------------------------*/
 .home-banner {
     overflow: hidden;
 }
