@@ -91,10 +91,22 @@
 							</header>
 							<!--/.entry-header-->
 
+							<div class="entry-meta">
+								<span class="author">投稿者 : wp-standard-design-book</span>
+								<span class="date"><time class="entry-date">2014年9月22日</time></span>
+								<span class="categories-links info"><a href="#" rel="category">新着情報</a></span>
+							</div>
+							<!--./entry-meta -->
+
 							<div class="entry-content">
 
 							</div>
 							<!--/.entry-content-->
+
+							<footer class="entry-footer">
+								<span class="comments-link"><a href="#">2件のコメント</a></span>
+								<span class="tag-links"><a href="#" rel="tag"></a></span>
+							</footer>
 
 						</article>
 
@@ -114,12 +126,12 @@
 										</div>
 										<em class="comment-awaiting-moderation">あなたのコメントは承認待ちです。</em>
 										<br>
-										<div class="comment-meta commentmetadata"><a href="#">2014年11月10日 12:51 AM</a>
+										<div class="comment-meta commentmetadata"><a href="#">2015年01月10日 12:51 AM</a>
 										</div>
 										<p><a href="mailto:administer@example.com">administer@example.com</a>
 										</p>
 										<div class="reply">
-											<a class="comment-reply-link" href="?p=23&amp;replytocom=2#respond" onclick="return addComment.moveForm(&quot;div-comment-2&quot;, &quot;2&quot;, &quot;respond&quot;, &quot;23&quot;)">返信</a>
+											<a class="comment-reply-link" href="#" onclick="return addComment.moveForm(&quot;div-comment-2&quot;, &quot;2&quot;, &quot;respond&quot;, &quot;23&quot;)">返信</a>
 										</div>
 									</div>
 									<ul class="children">
@@ -132,12 +144,12 @@
 												</div>
 												<em class="comment-awaiting-moderation">あなたのコメントは承認待ちです。</em>
 												<br>
-												<div class="comment-meta commentmetadata"><a href="http://localhost:8888/?p=23#comment-3">
-              2014年11月10日 12:51 AM</a>
+												<div class="comment-meta commentmetadata"><a href="#">
+              2015年02月10日 12:51 AM</a>
 												</div>
 												<p>test</p>
 												<div class="reply">
-													<a class="comment-reply-link" href="?p=23&amp;replytocom=3#respond" onclick="return addComment.moveForm(&quot;div-comment-3&quot;, &quot;3&quot;, &quot;respond&quot;, &quot;23&quot;)">返信</a>
+													<a class="comment-reply-link" href="#" onclick="return addComment.moveForm(&quot;div-comment-3&quot;, &quot;3&quot;, &quot;respond&quot;, &quot;23&quot;)">返信</a>
 												</div>
 											</div>
 										</li>
@@ -147,25 +159,27 @@
 								</li>
 								<!-- #comment-## -->
 							</ol>
+
 							<div class="navigation">
 								<div class="alignleft"></div>
 								<div class="alignright"></div>
 							</div>
+
 							<div id="respond">
 								<h3>コメントを残す</h3>
 								<div id="cancel-comment-reply">
-									<small><a rel="nofollow" id="cancel-comment-reply-link" href="?p=23#respond" style="display:none;">返信をキャンセルする。</a>
+									<small><a rel="nofollow" id="cancel-comment-reply-link" href="" style="display:none;">返信をキャンセルする。</a>
       </small>
 								</div>
-								<form action="http://localhost:8888/wp-comments-post.php" method="post" id="commentform">
+								<form action="/" method="post" id="commentform">
 									<p>
-										<input type="text" name="author" id="author" value="テスト" size="22" tabindex="1" aria-required="true">
+										<input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required="true">
 										<label for="author">
 											<small>名前 (必須)</small>
 										</label>
 									</p>
 									<p>
-										<input type="text" name="email" id="email" value="administer@example.com" size="22" tabindex="2" aria-required="true">
+										<input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required="true">
 										<label for="email">
 											<small>メールアドレス (非公開) (必須)</small>
 										</label>
@@ -183,8 +197,6 @@
 									</p>
 									<p>
 										<input name="submit" type="submit" id="submit" tabindex="5" value="コメントを送信">
-										<input type="hidden" name="comment_post_ID" value="23" id="comment_post_ID">
-										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 									</p>
 								</form>
 							</div>
@@ -329,8 +341,6 @@
 
 		</footer>
 		<!--▲フッター : 終了-->
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	</body>
 

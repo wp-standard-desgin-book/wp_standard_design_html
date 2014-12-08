@@ -1092,6 +1092,10 @@ textarea {
     background-position: 7px center;
 }
 .entry-footer span.tag-links {
+    min-height: 29px;
+
+    vertical-align: bottom;
+
     background-image: url(images/icons/icon-tag.png);
     background-repeat: no-repeat;
     background-position: 7px center;
