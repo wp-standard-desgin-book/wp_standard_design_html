@@ -89,6 +89,7 @@
 	  }
 	}
 
+  span,
   a {
     font-family: $heading-font;
     font-weight: 700;
@@ -126,13 +127,6 @@
 		height: 1px;
 		width: 1px;
 		clip: rect(1px, 1px, 1px, 1px);
-	  @media screen and(max-width: 640px){
-			position: static;
-			clip: inherit;
-			overflow: hidden;
-			height: inherit;
-			width: inherit;
-	  }
 		li{
 			text-align: left;
 			display: block;
@@ -155,16 +149,16 @@
 			border-left: 0;
 			left: 100%;
 			top: 0;
+	    width: 100%;
 		}
 
 	}
 }
 
-.header-navigation li:hover > ul,
-.header-navigation ul li:hover > ul,
-.header-navigation .focus > ul {
+.header-navigation li:hover > .sub-menu,
+.header-navigation .sub-menu li:hover > .sub-menu,
+.header-navigation .focus > .sub-menu {
 	clip: inherit;
 	overflow: visible;
 	height: inherit;
-	width: inherit;
 }
