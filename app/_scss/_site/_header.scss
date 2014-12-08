@@ -7,7 +7,7 @@
 //   <div class="container">
 //     <div class="header-logo">
 //       <a href="/">
-//         <img src="/images/logo.png" alt="OzoneCafe">
+//         <img src="/images/logo.png" alt="Ozone Cafe">
 //       </a>
 //     </div>
 //     <nav class="header-navigation">
@@ -35,43 +35,43 @@
 // Styleguide 3
 
 /*------------------------------------*\
-    2.0 ヘッダー
+		2.0 ヘッダー
 \*------------------------------------*/
 .header {
-    padding-top: 2em;
-    padding-bottom: 2em;
+		padding-top: 2em;
+		padding-bottom: 2em;
 
-    border-bottom: $base-border;
+		border-bottom: $base-border;
 		font-size: $base-font-size;
-    @extend .clearfix;
+		@extend .clearfix;
 
-    .header-logo {
-        float: left;
-        width: 30%;
+		.header-logo {
+				float: left;
+				width: 30%;
 				margin-top: 6px;
-        @media screen and(max-width: 640px){
-          float: none;
-          width: 100%;
-          margin-bottom: 2em;
-          text-align: center;
-        }
+				@media screen and(max-width: 640px){
+					float: none;
+					width: 100%;
+					margin-bottom: 2em;
+					text-align: center;
+				}
 
-    }
+		}
 }
 
 
 /*------------------------------------*\
-    2.1 グローバルナビゲーション
+		2.1 グローバルナビゲーション
 \*------------------------------------*/
 
 .header-navigation {
-  float: right;
+	float: right;
 	position: relative;
-  width: 52.4%;
-  @media screen and(max-width: 640px){
-    float: none;
-    width: 100%;
-  }
+	width: 52.4%;
+	@media screen and(max-width: 640px){
+		float: none;
+		width: 100%;
+	}
 }
 
 .header-navigation{
@@ -79,42 +79,42 @@
 		display: inline-block;
 		position: relative;
 		vertical-align: top;
-    &:hover {
-        background-color: $gray-light;
-    }
-	  @media screen and(max-width: 640px){
-	    float: none;
-	    width: 49%;
-	    text-align: center;
-	  }
+		&:hover {
+				background-color: $gray-light;
+		}
+		@media screen and(max-width: 640px){
+			float: none;
+			width: 49%;
+			text-align: center;
+		}
 	}
 
-  span,
-  a {
-    font-family: $heading-font;
-    font-weight: 700;
-    line-height: 2.8em;
+	span,
+	a {
+		font-family: $heading-font;
+		font-weight: 700;
+		line-height: 2.8em;
 
-    display: inline-block;
+		display: inline-block;
 
-    padding-right: 16px;
-    padding-left: 28px;
+		padding-right: 16px;
+		padding-left: 28px;
 
-    -webkit-transition: background ease-in 0.2s;
-       -moz-transition: background ease-in 0.2s;
-        -ms-transition: background ease-in 0.2s;
-         -o-transition: background ease-in 0.2s;
-            transition: background ease-in 0.2s;
-    text-decoration: none;
-    letter-spacing: 2.2px;
+		-webkit-transition: background ease-in 0.2s;
+			 -moz-transition: background ease-in 0.2s;
+				-ms-transition: background ease-in 0.2s;
+				 -o-transition: background ease-in 0.2s;
+						transition: background ease-in 0.2s;
+		text-decoration: none;
+		letter-spacing: 2.2px;
 
-    color: #686868;
-    background-image: url(/images/icons/arrow-middle.png);
-    background-repeat: no-repeat;
-    background-position: 12px 14px;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-  }
+		color: #686868;
+		background-image: url(/images/icons/arrow-middle.png);
+		background-repeat: no-repeat;
+		background-position: 12px 14px;
+		-webkit-border-radius: 2px;
+						border-radius: 2px;
+	}
 
 	.sub-menu{
 		background-color: #f5f5f5;
@@ -140,14 +140,14 @@
 			}
 
 		}
-	  @media screen and(max-width: 640px){
-	    float: none;
-	  }
+		@media screen and(max-width: 640px){
+			float: none;
+		}
 		ul{
 			border-left: 0;
 			left: 100%;
 			top: 0;
-	    width: 100%;
+			width: 100%;
 		}
 
 	}
@@ -160,7 +160,7 @@
 	overflow: visible;
 	height: inherit;
 	width: inherit;
-  @media screen and(max-width: 640px){
-    width: 100%;
-  }
+	@media screen and(max-width: 640px){
+		width: 100%;
+	}
 }
