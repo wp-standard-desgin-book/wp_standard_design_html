@@ -544,8 +544,6 @@ table th {
 @media screen and (max-width: 640px) {
     .header-navigation .sub-menu {
         float: none;
-
-        width: 100%;
     }
 }
 .header-navigation .sub-menu ul {
@@ -563,7 +561,15 @@ table th {
     overflow: visible;
     clip: inherit;
 
+    width: inherit;
     height: inherit;
+}
+@media screen and (max-width: 640px) {
+    .header-navigation li:hover > .sub-menu,
+    .header-navigation .sub-menu li:hover > .sub-menu,
+    .header-navigation .focus > .sub-menu {
+        width: 100%;
+    }
 }
 
 /*------------------------------------*\
