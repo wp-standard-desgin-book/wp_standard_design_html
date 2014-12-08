@@ -437,7 +437,7 @@ table.contact-form {
 
 /* 8.14 ブログ一覧ページ
 	 -----------------------------------*/
-.archive {
+.blog {
 		.hentry {
 				margin-bottom: 24px;
 				padding: 24px;
@@ -473,7 +473,6 @@ table.contact-form {
 				}
 				a {
 						text-decoration: none;
-
 						color: $link-color;
 						&:hover{
 							color: $link-hover-color;
@@ -530,8 +529,9 @@ table.contact-form {
 			padding: 2px 16px;
 		}
 		.author {
+				padding-left: 28px;
 				float: left;
-				background-image: url(images/icons/icon-date.png);
+				background-image: url(images/icons/icon-author.png);
 				background-position: 8px center;
 				background-repeat: no-repeat;
 		}
@@ -539,7 +539,7 @@ table.contact-form {
 				padding-left: 28px;
 				border: $base-border;
 				background-image: url(images/icons/icon-date.png);
-				background-position: 8px center;
+				background-position: 5px center;
 				background-repeat: no-repeat;
 		}
 		.categories-links {

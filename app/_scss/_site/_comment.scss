@@ -86,7 +86,8 @@
 		text-align: center;
 	}
 	p{
-		clear: both;
+		margin-bottom: 1em;
+		overflow: hidden;
 		label{
 			float: left;
 		}
@@ -159,6 +160,7 @@
 		padding-right: 0.5em;
 		font-size: 0.8em;
 	}
+
 	.comment-meta{
 		display: inline;
 		+ p{
