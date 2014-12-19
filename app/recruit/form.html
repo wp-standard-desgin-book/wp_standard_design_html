@@ -1,11 +1,12 @@
 ---
 layout: page
-title: 求人応募フォーム
+title: スタッフ応募フォーム
 description: '"一杯"に込める思い。Ozone Cafe'
 slug: "page contact"
 ---
 
-<p>求人エントリーは、下記のフォームまでお願い致します。</p>
+<p>必要事項を入力のうえ、送信してください。<br>
+折り返し担当者より連絡いたします。</p>
 
 <form action="?" method="get">
 
@@ -15,7 +16,7 @@ slug: "page contact"
 
 			<tr>
 				<th>
-					お名前 <span class="text-danger">*</span>
+					お名前 <span class="text-danger">※必須</span>
 				</th>
 				<td>
 					<input type="text" name="name" value="">
@@ -24,25 +25,45 @@ slug: "page contact"
 
 			<tr>
 				<th>
-					メールアドレス <span class="text-danger">*</span>
+					ふりがな <span class="text-danger">※必須</span>
 				</th>
 				<td>
-					<input type="text" name="e-mail" value="">
+					<input type="text" name="name" value="">
 				</td>
 			</tr>
 
 			<tr>
 				<th>
-					タイトル
+					電話番号 <span class="text-danger">※必須</span>
 				</th>
 				<td>
-					<input type="text" name="title" value="">
+					<input type="text" name="name" value="">
 				</td>
 			</tr>
 
 			<tr>
 				<th>
-					お問い合わせ内容 <span class="text-danger">*</span>
+					メールアドレス <span class="text-danger">※必須</span>
+				</th>
+				<td>
+					<input type="email" name="e-mail" value="">
+				</td>
+			</tr>
+
+			<tr>
+				<th>
+					希望職種
+				</th>
+				<td>
+					<label for="hall"><input id="hall" name="hall" name="job_category" type="radio">ホールスタッフ</label>
+					<label for="kitchen"><input id="kitchen" name="kitchen" name="job_category" type="radio">キッチンスタッフ</label>
+					<label for="pending"><input id="pending" name="pending" name="job_category" type="radio">未定</label>
+				</td>
+			</tr>
+
+			<tr>
+				<th>
+					その他連絡事項
 				</th>
 				<td>
 					<textarea name="content"></textarea>
@@ -51,10 +72,19 @@ slug: "page contact"
 
 		</tbody>
 
-	</table>
+	</table><!--/.contact-form-->
+
+	<p class="text-center">
+		<input type="submit" value="お問い合わせを送信">
+	</p>
 
 </form>
 
-<p class="text-center">
-	<input type="submit" value="お問い合わせを送信">
-</p>
+<h4>個人情報の取扱について</h4>
+
+<ul>
+	<li>ご入力いただいた個人情報は厳正な管理の下でお取り扱いし、スタッフ選考の目的のみに使用します。</li>
+	<li>ご本人の同意無く第三者に貸与・売却、またはこれに類する行為は一切行っておりません。</li>
+</ul>
+
+
