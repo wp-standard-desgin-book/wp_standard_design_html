@@ -116,6 +116,10 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
-.screen-reader-text{
-	display: none;
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
 }

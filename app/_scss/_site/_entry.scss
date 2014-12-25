@@ -680,6 +680,34 @@ table.contact-form {
 		}
 }
 
+// ページネーション
+.pagination {
+    font-weight: bold;
+    overflow: hidden;
+    clear: both;
+    margin: 20px 0 80px 20px;
+    text-align: center;
+}
+.pagination .page-numbers {
+    display: inline;
+    list-style: none;
+}
+.pagination a.page-numbers {
+    color: #585858;
+    background-color: #F6F6F6;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 10px;
+}
+.pagination span.current ,
+.pagination a.page-numbers:hover {
+    color: #FFF;
+    background-color: #8B6C6C;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 10px;
+}
+
 /* 8.18 メニュー詳細 コンテンツ
 	 -----------------------------------*/
 .menu-detail {

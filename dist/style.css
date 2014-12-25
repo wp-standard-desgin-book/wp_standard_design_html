@@ -1373,6 +1373,46 @@ table.contact-form textarea {
     }
 }
 
+.pagination {
+    font-weight: bold;
+
+    clear: both;
+    overflow: hidden;
+
+    margin: 20px 0 80px 20px;
+
+    text-align: center;
+}
+
+.pagination .page-numbers {
+    display: inline;
+
+    list-style: none;
+}
+
+.pagination a.page-numbers {
+    display: inline-block;
+
+    padding: 3px 10px;
+
+    text-decoration: none;
+
+    color: #585858;
+    background-color: #f6f6f6;
+}
+
+.pagination span.current,
+.pagination a.page-numbers:hover {
+    display: inline-block;
+
+    padding: 3px 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #8b6c6c;
+}
+
 /* 8.18 メニュー詳細 コンテンツ
 	 -----------------------------------*/
 .menu-detail {
@@ -1641,7 +1681,13 @@ a img.aligncenter {
 }
 
 .screen-reader-text {
-    display: none;
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px;
+    height: 1px;
 }
 
 /*------------------------------------*\
