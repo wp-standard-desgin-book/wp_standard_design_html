@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-	{% include head.html %}
+{% include head.html %}
 
 	<body class="{{page.slug}}">
-
-		{% include header.html %}
-
+{% include header.html %}
 		<!--▼メインコンテンツ : 開始-->
 		<div id="main" class="l-two-column">
-
 			<div class="container">
-
 				<!-- ▼メインカラム : 開始-->
 				<div id="main-content" class="l-main site-main">
-
-					{{ content }}
-
-
+{{ content }}
 				</div>
 				<!-- ▲メインカラム : 終了-->
 
 				<!-- ▼サイドカラム : 開始-->
 				<aside id="secondary" class="l-sidebar">
-
-					{% include aside.html %}
-
+{% include aside.html %}
 				</aside>
 				<!-- ▲サイドカラム : 終了-->
 			</div>
 
-
 		</div>
 		<!--▲メインコンテンツ : 終了-->
-		{% include footer.html %}
-
-		{% include scripts.html %}
-
+{% include footer.html %}
+{% include scripts.html %}
 	</body>
 </html>

@@ -570,7 +570,7 @@ module.exports = function (grunt) {
 		// 'imagemin',
 		'usemin',
 		'styleguide',
-		'htmlautofixer',
+		// 'htmlautofixer',
 		'stringreplace',
 		'csscomb'
 		]);

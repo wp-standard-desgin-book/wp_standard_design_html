@@ -33,7 +33,7 @@
 
 /* 8.1 投稿タイトル
 	 -----------------------------------*/
-.entry-header {
+.page-header {
 		.entry-title {
 				font-size: 24px;
 
@@ -451,8 +451,7 @@ table.contact-form {
 		.archive-title{
 				@extend .entry-title;
 		}
-
-		.entry-header{
+		.page-header{
 			overflow: hidden;
 		}
 /* 8.14 ブログ一覧 タイトル

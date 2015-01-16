@@ -887,9 +887,9 @@ textarea {
 \*------------------------------------*/
 /* 8.1 投稿タイトル
 	 -----------------------------------*/
-.entry-header .entry-title,
-.entry-header .blog .archive-title,
-.blog .entry-header .archive-title {
+.page-header .entry-title,
+.page-header .blog .archive-title,
+.blog .page-header .archive-title {
     font-size: 24px;
 
     margin-top: 0;
@@ -1168,7 +1168,7 @@ table.contact-form textarea {
 
     border: 1px solid #e8e8e8;
 }
-.blog .entry-header {
+.blog .page-header {
     overflow: hidden;
 }
 .blog .entry-title,

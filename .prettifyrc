@@ -9,5 +9,5 @@
   "brace_style": "end-expand",
   "preserve_newlines": true,
   "max_preserve_newlines": 1,
-  "unformatted": ["a","span","strong","small"]
+  "unformatted": ["a","span","strong","small","li"]
 }
